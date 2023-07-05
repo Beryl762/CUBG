@@ -1,0 +1,10 @@
+{
+    "gitlens.proxy": {
+        
+    },
+    "files.associations": {
+        ".txt":"lua"
+    },
+    "luaide.apiType":"xlua"
+
+}
