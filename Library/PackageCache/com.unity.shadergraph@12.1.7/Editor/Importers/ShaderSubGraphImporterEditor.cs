@@ -1,30 +1,3 @@
-using UnityEditor;
-#if UNITY_2020_2_OR_NEWER
-using UnityEditor.AssetImporters;
-#else
-using UnityEditor.Experimental.AssetImporters;
-#endif
-using UnityEngine;
-using Debug = System.Diagnostics.Debug;
-
-namespace UnityEditor.ShaderGraph
-{
-    [CustomEditor(typeof(ShaderSubGraphImporter))]
-    class ShaderSubGraphImporterEditor : ScriptedImporterEditor
-    {
-        public override bool showImportedObject => Unsupported.IsDeveloperMode();
-        protected override bool needsApplyRevert => false;
-
-        public override void OnInspectorGUI()
-        {
-            if (GUILayout.Button("Open Shader Editor"))
-            {
-                AssetImporter importer = target as AssetImporter;
-                Debug.Assert(importer != null, "importer != null");
-                ShaderGraphImporterEditor.ShowGraphEditWindow(importer.assetPath);
-            }
-
-            ApplyRevertGUI();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ca9b2ca246d7eae7b0aa5ad594f6fbb7b89dc601d3a30386001392b29f407558
+size 904

@@ -1,23 +1,3 @@
-# Hyperbolic Sine Node
-
-## Description
-
-Returns the hyperbolic sine of input **In**.
-
-## Ports
-
-| Name        | Direction           | Type  | Description |
-|:------------ |:-------------|:-----|:---|
-| In      | Input | Dynamic Vector | Input value |
-| Out | Output      |    Dynamic Vector | Output value |
-
-## Generated Code Example
-
-The following example code represents one possible outcome of this node.
-
-```
-void Unity_HyperbolicSine_float4(float4 In, out float4 Out)
-{
-    Out = sinh(In);
-}
-```
+version https://git-lfs.github.com/spec/v1
+oid sha256:cda970963a8c4ffe3bd2632c9889ba78b7bd0add2ba813c3dcb8508aa9e3fbba
+size 502

@@ -1,36 +1,3 @@
-using UnityEngine;
-using UnityEditor.Graphing;
-
-namespace UnityEditor.ShaderGraph
-{
-    [Title("Input", "Geometry", "Vertex ID")]
-    class VertexIDNode : AbstractMaterialNode, IMayRequireVertexID
-    {
-        private const int kOutputSlotId = 0;
-        private const string kOutputSlotName = "Out";
-
-        public override bool hasPreview { get { return false; } }
-
-        public VertexIDNode()
-        {
-            name = "Vertex ID";
-            UpdateNodeAfterDeserialization();
-        }
-
-        public sealed override void UpdateNodeAfterDeserialization()
-        {
-            AddSlot(new Vector1MaterialSlot(kOutputSlotId, kOutputSlotName, kOutputSlotName, SlotType.Output, (int)0, ShaderStageCapability.Vertex));
-            RemoveSlotsNameNotMatching(new[] { kOutputSlotId });
-        }
-
-        public override string GetVariableNameForSlot(int slotId)
-        {
-            return string.Format("IN.{0}", ShaderGeneratorNames.VertexID);
-        }
-
-        public bool RequiresVertexID(ShaderStageCapability stageCapability)
-        {
-            return true;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:58477b1a67bc035e0e403ac03b4aa9e6f9f37340a8edf856c45802afd6234370
+size 1095

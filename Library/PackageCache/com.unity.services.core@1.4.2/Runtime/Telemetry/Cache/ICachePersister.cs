@@ -1,14 +1,3 @@
-namespace Unity.Services.Core.Telemetry.Internal
-{
-    interface ICachePersister<TPayload>
-        where TPayload : ITelemetryPayload
-    {
-        bool CanPersist { get; }
-
-        void Persist(CachedPayload<TPayload> cache);
-
-        bool TryFetch(out CachedPayload<TPayload> persistedCache);
-
-        void Delete();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5ade8f845b33eea93f6a7761dcea5a65ee3c22895287fd4343b942ab029b7019
+size 341

@@ -1,18 +1,3 @@
-using UnityEditor.Graphing;
-
-namespace UnityEditor.ShaderGraph
-{
-    interface IMayRequireVertexColor
-    {
-        bool RequiresVertexColor(ShaderStageCapability stageCapability = ShaderStageCapability.All);
-    }
-
-    static class MayRequireVertexColorExtensions
-    {
-        public static bool RequiresVertexColor(this MaterialSlot slot)
-        {
-            var mayRequireVertexColor = slot as IMayRequireVertexColor;
-            return mayRequireVertexColor != null && mayRequireVertexColor.RequiresVertexColor();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:82620a40b02eea88f84356956522b87596348631acc99a57b92a99483527ff94
+size 539

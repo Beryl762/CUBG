@@ -1,20 +1,3 @@
-using UnityEngine;
-
-namespace UnityEditor.ShaderGraph
-{
-    sealed partial class GraphData : ISerializationCallbackReceiver
-    {
-        public static class GraphSetup
-        {
-            public static void SetupNode(AbstractMaterialNode node)
-            {
-                node.Setup();
-            }
-
-            public static void SetupGraph(GraphData graph)
-            {
-                GraphDataUtils.ApplyActionLeafFirst(graph, SetupNode);
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b960cfb71ea2dcf906284b800faa747d6f89fd3a373424c27dd8becfc8e0ae6b
+size 482

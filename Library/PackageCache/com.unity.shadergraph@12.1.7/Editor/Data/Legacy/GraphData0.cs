@@ -1,26 +1,3 @@
-using System;
-using System.Collections.Generic;
-using UnityEditor.Graphing;
-
-namespace UnityEditor.ShaderGraph.Legacy
-{
-    [Serializable]
-    class GraphData0
-    {
-        public List<SerializationHelper.JSONSerializedElement> m_SerializableNodes;
-
-        public List<SerializationHelper.JSONSerializedElement> m_SerializableEdges;
-
-        public string m_ActiveOutputNodeGuidSerialized;
-
-        public List<SerializationHelper.JSONSerializedElement> m_SerializedProperties;
-
-        public List<SerializationHelper.JSONSerializedElement> m_SerializedKeywords;
-
-        public List<StickyNoteData0> m_StickyNotes;
-
-        public List<GroupData0> m_Groups;
-
-        public int m_Version = -1;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7e86d59072e77a75d454db39a8ede46173ae5387221da66bbc92c1e8e67efc62
+size 706

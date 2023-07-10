@@ -1,20 +1,3 @@
-# View Vector Node
-
-## Description
-
-This node provides access to an unnormalized version of the mesh vertex or fragment's **View Direction** vector. It does not normalize any of the values it stores. For a normalized option, see [View Direction Node](View-Direction-Node.md).
-
-Select a **Space** to modify the output value's coordinate space.
-
-## Ports
-
-| Name        | Direction           | Type  | Binding | Description |
-|:------------ |:-------------|:-----|:---|:---|
-| Out | Output      |    Vector 3 | None |View Vector for the Mesh Vertex/Fragment. |
-
-
-## Controls
-
-| Name        | Type           | Options  | Description |
-|:------------ |:-------------|:-----|:---|
-| Space | Dropdown | Object, View, World, Tangent | Selects coordinate space of **View Direction** to output. |
+version https://git-lfs.github.com/spec/v1
+oid sha256:013ecdb47c8561bc99cc92eccfcbd5553928a8c65df3f71682dd6f6c8c5c0e54
+size 788

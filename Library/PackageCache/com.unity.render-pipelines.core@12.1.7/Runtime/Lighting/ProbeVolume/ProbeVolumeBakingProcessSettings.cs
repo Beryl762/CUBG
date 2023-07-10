@@ -1,33 +1,3 @@
-using UnityEngine.Rendering;
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
-
-namespace UnityEngine.Experimental.Rendering
-{
-    [System.Serializable]
-    internal struct ProbeDilationSettings
-    {
-        public bool enableDilation;
-        public float dilationDistance;
-        public float dilationValidityThreshold;
-        public int dilationIterations;
-        public bool squaredDistWeighting;
-    }
-
-    [System.Serializable]
-    internal struct VirtualOffsetSettings
-    {
-        public bool useVirtualOffset;
-        public float outOfGeoOffset;
-        public float searchMultiplier;
-    }
-
-    // TODO: Use this structure in the actual authoring component rather than just a mean to group output parameters.
-    [System.Serializable]
-    internal struct ProbeVolumeBakingProcessSettings
-    {
-        public ProbeDilationSettings dilationSettings;
-        public VirtualOffsetSettings virtualOffsetSettings;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d3b2223b58b6d61bbe6e05d0b1958f6c7fc1f814a73c2782c8ff74814fdca010
+size 926

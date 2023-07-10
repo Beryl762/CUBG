@@ -1,18 +1,3 @@
-using UnityEditor.Graphing;
-
-namespace UnityEditor.ShaderGraph
-{
-    interface IMayRequireScreenPosition
-    {
-        bool RequiresScreenPosition(ShaderStageCapability stageCapability = ShaderStageCapability.All);
-    }
-
-    static class MayRequireScreenPositionExtensions
-    {
-        public static bool RequiresScreenPosition(this MaterialSlot slot, ShaderStageCapability stageCapability = ShaderStageCapability.All)
-        {
-            var mayRequireScreenPosition = slot as IMayRequireScreenPosition;
-            return mayRequireScreenPosition != null && mayRequireScreenPosition.RequiresScreenPosition(stageCapability);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:aeeb68a69403bf7aa588cc1a2daf7d7068c084764dba229d46574f2ab023f423
+size 648

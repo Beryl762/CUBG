@@ -1,31 +1,3 @@
-using System.Reflection;
-
-namespace UnityEditor.ShaderGraph
-{
-    [Title("Math", "Basic", "Divide")]
-    class DivideNode : CodeFunctionNode
-    {
-        public DivideNode()
-        {
-            name = "Divide";
-            synonyms = new string[] { "division", "divided by" };
-        }
-
-        protected override MethodInfo GetFunctionToConvert()
-        {
-            return GetType().GetMethod("Unity_Divide", BindingFlags.Static | BindingFlags.NonPublic);
-        }
-
-        static string Unity_Divide(
-            [Slot(0, Binding.None, 0, 0, 0, 0)] DynamicDimensionVector A,
-            [Slot(1, Binding.None, 2, 2, 2, 2)] DynamicDimensionVector B,
-            [Slot(2, Binding.None)] out DynamicDimensionVector Out)
-        {
-            return @"
-{
-    Out = A / B;
-}
-";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5d1b70dab37cb03527956b69a5c4afe33157ce4edc91766c2fb7946b23c89593
+size 801

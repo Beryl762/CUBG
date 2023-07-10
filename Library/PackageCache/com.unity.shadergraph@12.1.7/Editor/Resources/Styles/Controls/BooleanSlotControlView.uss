@@ -1,10 +1,3 @@
-BooleanSlotControlView {
-    flex-direction: row;
-    align-items: center;
-}
-
-.unity-base-field {
-    width: 20px;
-    margin-top: 1px;
-    margin-bottom: 3px;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fa6277167badd5dbfc138d8ab05b03df1cef7771379a071338b9996d05e4f2cc
+size 162

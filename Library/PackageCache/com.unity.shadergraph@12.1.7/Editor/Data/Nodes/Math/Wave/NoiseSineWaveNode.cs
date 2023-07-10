@@ -1,36 +1,3 @@
-using UnityEngine;
-using System.Reflection;
-
-namespace UnityEditor.ShaderGraph
-{
-    [Title("Math", "Wave", "Noise Sine Wave")]
-    class NoiseSineWaveNode : CodeFunctionNode
-    {
-        public NoiseSineWaveNode()
-        {
-            name = "Noise Sine Wave";
-        }
-
-        protected override MethodInfo GetFunctionToConvert()
-        {
-            return GetType().GetMethod("NoiseSineWave", BindingFlags.Static | BindingFlags.NonPublic);
-        }
-
-        static string NoiseSineWave(
-            [Slot(0, Binding.None)] DynamicDimensionVector In,
-            [Slot(1, Binding.None, -0.5f, 0.5f, 1, 1)] Vector2 MinMax,
-            [Slot(2, Binding.None)] out DynamicDimensionVector Out)
-        {
-            return
-@"
-{
-    $precision sinIn = sin(In);
-    $precision sinInOffset = sin(In + 1.0);
-    $precision randomno =  frac(sin((sinIn - sinInOffset) * (12.9898 + 78.233))*43758.5453);
-    $precision noise = lerp(MinMax.x, MinMax.y, randomno);
-    Out = sinIn + noise;
-}
-";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a9692167c9b046c6d9d831f9da738ef6e1f6b04a17a0c464f79c926d9b7b176c
+size 1009

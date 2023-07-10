@@ -1,24 +1,3 @@
-# Modulo Node
-
-## Description
-
-Returns the remainder of dividing input **A** by input **B**.
-
-## Ports
-
-| Name        | Direction           | Type  | Description |
-|:------------ |:-------------|:-----|:---|
-| A      | Input | Dynamic Vector | First input value |
-| B      | Input | Dynamic Vector | Second input value |
-| Out | Output      |    Dynamic Vector | Output value |
-
-## Generated Code Example
-
-The following example code represents one possible outcome of this node.
-
-```
-void Unity_Modulo_float4(float4 A, float4 B, out float4 Out)
-{
-    Out = fmod(A, B);
-}
-```
+version https://git-lfs.github.com/spec/v1
+oid sha256:a43f6855f623ef4e34f4c4b4d4c6824adc4c168c4da9a7ed1deadb92d26e2095
+size 575

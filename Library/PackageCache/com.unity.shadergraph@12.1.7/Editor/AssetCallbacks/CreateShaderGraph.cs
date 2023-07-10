@@ -1,14 +1,3 @@
-using UnityEngine;
-using UnityEngine.Rendering;
-
-namespace UnityEditor.ShaderGraph
-{
-    static class CreateShaderGraph
-    {
-        [MenuItem("Assets/Create/Shader Graph/Blank Shader Graph", priority = CoreUtils.Sections.section1 + CoreUtils.Priorities.assetsCreateShaderMenuPriority)]
-        public static void CreateBlankShaderGraph()
-        {
-            GraphUtil.CreateNewGraph();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:02910dd1ab23f8303d82344df6d9d240509cf899a0ac2c114be935299ab63493
+size 408

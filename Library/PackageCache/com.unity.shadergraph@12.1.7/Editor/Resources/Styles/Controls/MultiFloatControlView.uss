@@ -1,33 +1,3 @@
-MultiFloatControlView {
-    flex-direction: row;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-}
-
-MultiFloatControlView > #dummy > Label {
-    margin-left: 0;
-    margin-right: 0;
-    -unity-text-align: middle-left;
-}
-
-
-.unity-base-field {
-    min-width: 30px;
-    flex-grow: 1;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.unity-base-field__input{
-    margin-left: 0;
-    margin-right: 0;
-    -unity-text-align: middle-left;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6584dca4b963f55c1e42503853b503320d51c482107b7b9e98eb0991ecf9127e
+size 607

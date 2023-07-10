@@ -1,35 +1,3 @@
-using NUnit.Framework;
-
-namespace UnityEngine.Rendering
-{
-    public class CoreRenderPipelinePreferencesTests
-    {
-        [Test]
-        public void RegisterInvalidPreferenceColorName()
-        {
-            bool RegisterColor(string colorName)
-            {
-                try
-                {
-                    CoreRenderPipelinePreferences.RegisterPreferenceColor(colorName, Color.black);
-                }
-                catch
-                {
-                    return false;
-                }
-
-                return true;
-            }
-
-            Assert.False(RegisterColor(null));
-            Assert.False(RegisterColor(""));
-        }
-
-        [Test]
-        public void RegisterPreferenceColor()
-        {
-            var color = CoreRenderPipelinePreferences.RegisterPreferenceColor("TEST/DEFAULT_GREEN", Color.green);
-            Assert.True(color() == Color.green);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5bafb0c271205aba93161d83783802315f84b0c528bc4b105654d448f96fe57e
+size 908

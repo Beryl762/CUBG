@@ -1,34 +1,3 @@
-# Invert Colors Node
-
-## Description
-
-Inverts the colors of input **In** on a per channel basis. This [Node](Node.md) assumes all input values are in the range 0 - 1.
-
-## Ports
-
-| Name        | Direction           | Type  | Binding | Description |
-|:------------ |:-------------|:-----|:---|:---|
-| In      | Input | Dynamic Vector | None | Input value |
-| Out | Output      |    Dynamic Vector | None | Output value |
-
-## Controls
-
-| Name        | Type           | Options  | Description |
-|:------------ |:-------------|:-----|:---|
-| Red      | Toggle | True, False | If true red channel is inverted |
-| Green     | Toggle | True, False | If true green channel is inverted. Disabled if input vector dimension is less than 2 |
-| Blue     | Toggle | True, False | If true blue channel is inverted. Disabled if input vector dimension is less than 3 |
-| Alpha     | Toggle | True, False | If true alpha channel is inverted. Disabled if input vector dimension is less than 4 |
-
-## Generated Code Example
-
-The following example code represents one possible outcome of this node.
-
-```
-float2 _InvertColors_InvertColors = float4(Red, Green, Blue, Alpha);
-
-void Unity_InvertColors_float4(float4 In, float4 InvertColors, out float4 Out)
-{
-    Out = abs(InvertColors - In);
-}
-```
+version https://git-lfs.github.com/spec/v1
+oid sha256:ca2ca95857e4ce39245c5e5f63be1b73152355552bf4c289a6072e98647d1b4b
+size 1272

@@ -1,26 +1,3 @@
-using System;
-using System.Linq;
-using UnityEngine;
-using UnityEngine.UIElements;
-
-namespace UnityEditor.ShaderGraph.Drawing.Colors
-{
-    class CategoryColors : ColorProviderFromStyleSheet
-    {
-        public override string GetTitle() => "Category";
-
-        public override bool AllowCustom() => false;
-        public override bool ClearOnDirty() => false;
-
-        protected override bool GetClassFromNode(AbstractMaterialNode node, out string ussClass)
-        {
-            ussClass = string.Empty;
-            if (!(node.GetType().GetCustomAttributes(typeof(TitleAttribute), false).FirstOrDefault() is TitleAttribute title))
-                return false;
-
-            ussClass = title.title[0];
-
-            return !string.IsNullOrEmpty(ussClass);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:edac9894689eccb8f87af1aefa8fd23f44e432aeb9c219f03b1ea7e4b50a2d2c
+size 773

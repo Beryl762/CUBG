@@ -1,14 +1,3 @@
-#ifndef UNITY_COMMON_SHADOW_INCLUDED
-#define UNITY_COMMON_SHADOW_INCLUDED
-
-// Ref: https://mynameismjp.wordpress.com/2015/02/18/shadow-sample-update/
-// Calculates the offset to use for sampling the shadow map, based on the surface normal
-real3 GetShadowPosOffset(real NdotL, real3 normalWS, real2 invShadowMapSize)
-{
-    real texelSize = 2.0 * invShadowMapSize.x;
-    real offsetScaleNormalize = saturate(1.0 - NdotL);
-    // return texelSize * OffsetScale * offsetScaleNormalize * normalWS;
-    return texelSize * offsetScaleNormalize * normalWS;
-}
-
-#endif // UNITY_COMMON_SHADOW_INCLUDED
+version https://git-lfs.github.com/spec/v1
+oid sha256:d733ae50f0c0f6009615644abe74a3d46e6d91905b3897abf52c2b64d3e2457b
+size 591

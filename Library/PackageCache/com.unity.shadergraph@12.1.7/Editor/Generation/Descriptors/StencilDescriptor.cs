@@ -1,17 +1,3 @@
-namespace UnityEditor.ShaderGraph
-{
-    [GenerationAPI]
-    internal struct StencilDescriptor
-    {
-        public string WriteMask;
-        public string Ref;
-        public string Comp;
-        public string ZFail;
-        public string Fail;
-        public string Pass;
-        public string CompBack;
-        public string ZFailBack;
-        public string FailBack;
-        public string PassBack;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3efa02624bb89b5e96d1901d153fae0a77928fcd9e50c07bd3ad87ab9cd22cd9
+size 410

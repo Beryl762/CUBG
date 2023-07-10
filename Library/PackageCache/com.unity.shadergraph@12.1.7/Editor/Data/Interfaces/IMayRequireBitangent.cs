@@ -1,19 +1,3 @@
-using UnityEditor.Graphing;
-using UnityEditor.ShaderGraph.Internal;
-
-namespace UnityEditor.ShaderGraph
-{
-    interface IMayRequireBitangent
-    {
-        NeededCoordinateSpace RequiresBitangent(ShaderStageCapability stageCapability = ShaderStageCapability.All);
-    }
-
-    static class MayRequireBitangentExtensions
-    {
-        public static NeededCoordinateSpace RequiresBitangent(this MaterialSlot slot)
-        {
-            var mayRequireBitangent = slot as IMayRequireBitangent;
-            return mayRequireBitangent != null ? mayRequireBitangent.RequiresBitangent() : NeededCoordinateSpace.None;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:dc05cbaa490da482796cc5171520cec0129548b0774032819c3a5ee51526d53c
+size 623

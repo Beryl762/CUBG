@@ -1,33 +1,3 @@
-using System.Reflection;
-using UnityEngine;
-
-namespace UnityEditor.ShaderGraph
-{
-    [Title("Math", "Matrix", "Matrix Determinant")]
-    class MatrixDeterminantNode : CodeFunctionNode
-    {
-        public MatrixDeterminantNode()
-        {
-            name = "Matrix Determinant";
-        }
-
-        public override bool hasPreview => false;
-
-        protected override MethodInfo GetFunctionToConvert()
-        {
-            return GetType().GetMethod("Unity_MatrixDeterminant", BindingFlags.Static | BindingFlags.NonPublic);
-        }
-
-        static string Unity_MatrixDeterminant(
-            [Slot(0, Binding.None)] DynamicDimensionMatrix In,
-            [Slot(1, Binding.None)] out Vector1 Out)
-        {
-            return
-@"
-{
-    Out = determinant(In);
-}
-";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b0efa6e4d3bfb636a39369a4da922840308f5b343c119a737ec4c724b2d7e5c6
+size 784

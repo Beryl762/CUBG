@@ -1,26 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace UnityEditor.ShaderGraph
-{
-    [Serializable]
-    [GenerationAPI]
-    internal struct DropdownEntry
-    {
-        public int id; // Used to determine what MaterialSlot an entry belongs to
-        public string displayName;
-
-        // In this case, we will handle the actual IDs later
-        public DropdownEntry(string displayName)
-        {
-            this.id = -1;
-            this.displayName = displayName;
-        }
-
-        internal DropdownEntry(int id, string displayName)
-        {
-            this.id = id;
-            this.displayName = displayName;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a18a97ace72b6f6adee42b13ead2f44b3c4e5c99ed3772fd820daa2d9aabc8ff
+size 625

@@ -1,24 +1,3 @@
-using System;
-
-namespace UnityEngine.Rendering
-{
-    /// <summary>
-    /// Attribute used to customize UI display.
-    /// </summary>
-    [AttributeUsage(AttributeTargets.Field)]
-    public class DisplayInfoAttribute : Attribute
-    {
-        /// <summary>Display name used in UI.</summary>
-        public string name;
-        /// <summary>Display order used in UI.</summary>
-        public int order;
-    }
-
-    /// <summary>
-    /// Attribute used to customize UI display to allow properties only be visible when "Show Additional Properties" is selected
-    /// </summary>
-    [AttributeUsage(AttributeTargets.Field)]
-    public class AdditionalPropertyAttribute : Attribute
-    {
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:76bbf787de4b00951a1705b928b0179860c23a9abc4935987e09089224e46690
+size 691

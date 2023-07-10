@@ -1,23 +1,3 @@
-using UnityEngine;
-using UnityEngine.TestTools;
-using NUnit.Framework;
-using System.Collections;
-
-class RuntimeExampleTest
-{
-    [Test]
-    public void PlayModeSampleTestSimplePasses()
-    {
-        // Use the Assert class to test conditions.
-    }
-
-    // A UnityTest behaves like a coroutine in PlayMode
-    // and allows you to yield null to skip a frame in EditMode
-    [UnityTest]
-    public IEnumerator PlayModeSampleTestWithEnumeratorPasses()
-    {
-        // Use the Assert class to test conditions.
-        // yield to skip a frame
-        yield return null;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6136ceab5d2e8e0bd9b1aa06709b13998a76390af7b87cb0362120d8d84e2ce4
+size 576

@@ -1,17 +1,3 @@
-#ifndef UNITY_DECLARE_OPAQUE_TEXTURE_INCLUDED
-#define UNITY_DECLARE_OPAQUE_TEXTURE_INCLUDED
-#include "Packages/com.unity.shadergraph/Editor/Generation/Targets/BuiltIn/ShaderLibrary/Core.hlsl"
-
-TEXTURE2D_X(_CameraOpaqueTexture);
-SAMPLER(sampler_CameraOpaqueTexture);
-
-float3 SampleSceneColor(float2 uv)
-{
-    return SAMPLE_TEXTURE2D_X(_CameraOpaqueTexture, sampler_CameraOpaqueTexture, UnityStereoTransformScreenSpaceTex(uv)).rgb;
-}
-
-float3 LoadSceneColor(uint2 uv)
-{
-    return LOAD_TEXTURE2D_X(_CameraOpaqueTexture, uv).rgb;
-}
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:c36a58dd1a000359f5155894d67333b8c71e1751a421dd77c5dac93017eb3a09
+size 535

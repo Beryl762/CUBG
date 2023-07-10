@@ -1,17 +1,3 @@
-# Iris Offset Node
-
-Applies an offset to the center of the Iris as real world eyes are never symmetrical and centered.
-
-## Render pipeline compatibility
-
-| **Node**             | **Universal Render Pipeline (URP)** | **High Definition Render Pipeline (HDRP)** |
-| -------------------- | ----------------------------------- | ------------------------------------------ |
-| **Iris Offset Node** | No                                  | Yes                                        |
-
-## Ports
-
-| name           | **Direction** | type    | description                                                  |
-| -------------- | ------------- | ------- | ------------------------------------------------------------ |
-| **IrisUV**     | Input         | Vector2 | Normalized UV coordinates to sample either a texture or procedurally generate an Iris Texture. |
-| **IrisOffset** | Input         | Vector2 | Normalized [0, 1]x[0,1] value that defines on each axis the intensity of the offset of the Center of the pupil. |
-| **IrisUV**     | Output        | Vector2 | Normalized UV coordinates to sample either a texture or procedurally generate an Iris Texture. |
+version https://git-lfs.github.com/spec/v1
+oid sha256:97c9550ec9857a0855c9b968c94bc24566a5fa8f064a081e2d7f58fb1f0b923a
+size 1148

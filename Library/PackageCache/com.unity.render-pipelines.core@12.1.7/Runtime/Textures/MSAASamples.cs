@@ -1,17 +1,3 @@
-namespace UnityEngine.Rendering
-{
-    /// <summary>
-    /// Number of MSAA samples.
-    /// </summary>
-    public enum MSAASamples
-    {
-        /// <summary>No MSAA.</summary>
-        None = 1,
-        /// <summary>MSAA 2X.</summary>
-        MSAA2x = 2,
-        /// <summary>MSAA 4X.</summary>
-        MSAA4x = 4,
-        /// <summary>MSAA 8X.</summary>
-        MSAA8x = 8
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:aa2d0a97add3faff7d57aaa54ed4ebc1a9cb5167aa535486993e14b1ed7c41f5
+size 382

@@ -1,26 +1,3 @@
-using System.Linq;
-using UnityEditor.Graphing;
-
-namespace UnityEditor.ShaderGraph
-{
-    readonly struct GraphDataReadOnly
-    {
-        private readonly GraphData m_Graph;
-
-        public GraphDataReadOnly(GraphData graph)
-        {
-            m_Graph = graph;
-        }
-
-        private bool AnyConnectedControl<T>() where T : IControl
-        {
-            var matchingNodes = m_Graph.GetNodes<BlockNode>().Where(o => o.descriptor.control is T);
-            return matchingNodes.SelectMany(o => o.GetInputSlots<MaterialSlot>()).Any(o => o.isConnected);
-        }
-
-        public bool AnyVertexAnimationActive()
-        {
-            return AnyConnectedControl<PositionControl>();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2ad7d4f54afb1205c01e567fe9c3775b728043efc6e34b9c53586602dfc5648e
+size 701

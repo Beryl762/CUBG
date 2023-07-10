@@ -1,5 +1,3 @@
-com.unity.services.core copyright © 2022 Unity Technologies.
-
-This software is subject to, and made available under, the terms of service for com.unity.services.core (see https://unity3d.com/legal/one-operate-services-terms-of-service), and is an “Operate Service” as defined therein.
-
-Your use of the Services constitutes your acceptance of such terms. Unless expressly provided otherwise, the software under this license is made available strictly on an “AS IS” BASIS WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. Please review the terms of service for details on these and other terms and conditions.
+version https://git-lfs.github.com/spec/v1
+oid sha256:f54e74fe8ad84cc21696411b42d47e993c0ee89b921f7565e87e614f0b779201
+size 622

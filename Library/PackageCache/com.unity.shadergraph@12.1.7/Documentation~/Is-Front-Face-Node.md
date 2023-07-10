@@ -1,13 +1,3 @@
-# Is Front Face Node
-
-## Description
-
-Returns true if currently rendering a front face and false if rendering a back face. This value is always true unless the [Master Node](Master-Node.md)'s **Two Sided** value is set to true in the **Material Options**. This is useful for [Branching](Branch-Node.md).
-
-NOTE: This [Node](Node.md) can only be used in the **Fragment** [Shader Stage](Shader-Stage.md).
-
-## Ports
-
-| Name        | Direction           | Type  | Binding | Description |
-|:------------ |:-------------|:-----|:---|:---|
-| Out | Output      |    Boolean | None | Output value |
+version https://git-lfs.github.com/spec/v1
+oid sha256:cb90f48d677e854c1da0d3372fb88833f02a276a7969b07a74ca01fc3cf45681
+size 589

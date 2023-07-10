@@ -1,16 +1,3 @@
-using System.Threading.Tasks;
-using Newtonsoft.Json;
-
-namespace Unity.Services.Core.Configuration
-{
-    class StreamingAssetsConfigurationLoader : IConfigurationLoader
-    {
-        public async Task<SerializableProjectConfiguration> GetConfigAsync()
-        {
-            var jsonConfig = await StreamingAssetsUtils.GetFileTextFromStreamingAssetsAsync(
-                ConfigurationUtils.ConfigFileName);
-            var config = JsonConvert.DeserializeObject<SerializableProjectConfiguration>(jsonConfig);
-            return config;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7c60c4a73115f0e1afaf5306b2352112dd8e7cc2504a0b68c717120f3253de0a
+size 569

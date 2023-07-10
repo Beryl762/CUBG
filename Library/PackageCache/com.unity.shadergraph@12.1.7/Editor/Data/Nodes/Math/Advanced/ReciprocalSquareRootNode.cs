@@ -1,31 +1,3 @@
-using System.Reflection;
-
-namespace UnityEditor.ShaderGraph
-{
-    [Title("Math", "Advanced", "Reciprocal Square Root")]
-    class ReciprocalSquareRootNode : CodeFunctionNode
-    {
-        public ReciprocalSquareRootNode()
-        {
-            name = "Reciprocal Square Root";
-            synonyms = new string[] { "rsqrt", "inversesqrt" };
-        }
-
-        protected override MethodInfo GetFunctionToConvert()
-        {
-            return GetType().GetMethod("Unity_Rsqrt", BindingFlags.Static | BindingFlags.NonPublic);
-        }
-
-        static string Unity_Rsqrt(
-            [Slot(0, Binding.None, 1, 1, 1, 1)] DynamicDimensionVector In,
-            [Slot(1, Binding.None)] out DynamicDimensionVector Out)
-        {
-            return
-@"
-{
-    Out = rsqrt(In);
-}
-";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3895193da60fc8174ef7b9034c87a32ff10fe44f1d19ba98288481cc19c8bd58
+size 791

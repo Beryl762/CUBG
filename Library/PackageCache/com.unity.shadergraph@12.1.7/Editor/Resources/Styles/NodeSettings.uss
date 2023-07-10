@@ -1,20 +1,3 @@
-NodeSettingsView {
-    width: 362px;
-    position: absolute;
-    -unity-slice-top: 40;
-    -unity-slice-left: 80;
-    -unity-slice-right: 25;
-    -unity-slice-bottom: 25;
-    padding-top: 15px;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-bottom: 4px;
-    background-image: resource("Icons/Settings_Flyout_9slice");
-}
-
-NodeSettingsView > #mainContainer {
-    padding-top: 4px;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-bottom: 4px;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1933cbc0f07c5141926ff276abb9547e9e2254c72c77ffb81d9337da699dd071
+size 465

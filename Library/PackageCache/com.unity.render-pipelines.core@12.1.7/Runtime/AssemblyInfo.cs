@@ -1,7 +1,3 @@
-using System.Runtime.CompilerServices;
-
-#if ENABLE_HYBRID_RENDERER_V2 && !HYBRID_0_6_0_OR_NEWER
-#error Core SRP 10.0.0 or newer with Hybrid Renderer V2 requires at least version 0.6.0 of com.unity.rendering.hybrid
-#endif
-
-[assembly: InternalsVisibleTo("Unity.RenderPipelines.Core.Editor")]
+version https://git-lfs.github.com/spec/v1
+oid sha256:e534688893dc2439e2d33dbfb49ef083d8cafe7d4a72e4ad3158aa1d6c674789
+size 290

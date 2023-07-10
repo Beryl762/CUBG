@@ -1,30 +1,3 @@
-using System;
-using System.Collections.Generic;
-using UnityEditor.Graphing;
-
-namespace UnityEditor.ShaderGraph.Legacy
-{
-    [FormerName("UnityEditor.ShaderGraph.UnlitMasterNode")]
-    class UnlitMasterNode1 : AbstractMaterialNode, IMasterNode1
-    {
-        public enum SurfaceType
-        {
-            Opaque,
-            Transparent
-        }
-
-        public enum AlphaMode
-        {
-            Alpha,
-            Premultiply,
-            Additive,
-            Multiply
-        }
-
-        public SurfaceType m_SurfaceType;
-        public AlphaMode m_AlphaMode;
-        public bool m_TwoSided;
-        public string m_ShaderGUIOverride;
-        public bool m_OverrideEnabled;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5a0c5f3a50cce54076b41ffd68480cd6827514e7d86cc42736ea75cf05173d36
+size 687

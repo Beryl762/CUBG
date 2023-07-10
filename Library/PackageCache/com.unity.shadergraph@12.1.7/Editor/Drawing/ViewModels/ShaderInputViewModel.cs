@@ -1,32 +1,3 @@
-using System;
-using UnityEditor.ShaderGraph.Internal;
-using UnityEngine;
-using UnityEngine.UIElements;
-
-namespace UnityEditor.ShaderGraph.Drawing
-{
-    class ShaderInputViewModel : ISGViewModel
-    {
-        public ShaderInput model { get; set; }
-
-        public VisualElement parentView { get; set; }
-
-        internal bool isSubGraph { get; set; }
-        internal bool isInputExposed { get; set; }
-
-        internal string inputName { get; set; }
-
-        internal string inputTypeName { get; set; }
-
-        internal Action<IGraphDataAction> requestModelChangeAction { get; set; }
-
-        public void ResetViewModelData()
-        {
-            isSubGraph = false;
-            isInputExposed = false;
-            inputName = String.Empty;
-            inputTypeName = String.Empty;
-            requestModelChangeAction = null;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f9e855d52334181fe47888378d3cbab1ab46800d7578ff9fb7b99ae881dd1174
+size 848

@@ -1,24 +1,3 @@
-# Step Node
-
-## Description
-
-Per component, returns 1 if the value of input **In** is greater than or equal to the value of input **Edge**, otherwise returns 0.
-
-## Ports
-
-| Name        | Direction           | Type  | Description |
-|:------------ |:-------------|:-----|:---|
-| Edge      | Input | Dynamic Vector | Step value |
-| In      | Input | Dynamic Vector | Input value |
-| Out | Output      |    Dynamic Vector | Output value |
-
-## Generated Code Example
-
-The following example code represents one possible outcome of this node.
-
-```
-void Unity_Step_float4(float4 Edge, float4 In, out float4 Out)
-{
-    Out = step(Edge, In);
-}
-```
+version https://git-lfs.github.com/spec/v1
+oid sha256:c4d14b7db34375d4a342efeacbaba19e5c8d224ab3c66dd0a65d6fa5510b4957
+size 639

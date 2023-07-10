@@ -1,24 +1,3 @@
-# Projection Node
-
-## Description
-
-Returns the result of projecting the value of input **A** onto a straight line parallel to the value of input **B**.
-
-## Ports
-
-| Name        | Direction           | Type  | Description |
-|:------------ |:-------------|:-----|:---|
-| A      | Input | Dynamic Vector | First input value |
-| B      | Input | Dynamic Vector | Second input value |
-| Out | Output      |   Dynamic Vector | Output value |
-
-## Generated Code Example
-
-The following example code represents one possible outcome of this node.
-
-```
-void Unity_Projection_float4(float4 A, float4 B, out float4 Out)
-{
-    Out = B * dot(A, B) / dot(B, B);
-}
-```
+version https://git-lfs.github.com/spec/v1
+oid sha256:fdfb02da4e46b7a6c7c0c6a6ec84c9b899b3ad6d0419975aa1ebdadc3c9166e8
+size 652

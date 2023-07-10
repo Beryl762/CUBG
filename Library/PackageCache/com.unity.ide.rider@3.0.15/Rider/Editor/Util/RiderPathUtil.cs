@@ -1,14 +1,3 @@
-﻿using System.IO;
-
-namespace Rider.Editor.Util
-{
-  internal static class RiderPathUtil
-  {
-    public static bool IsRiderDevEditor(string editorPath)
-    {
-      if (editorPath == null)
-        return false;
-      return "rider-dev".Equals(Path.GetFileNameWithoutExtension(editorPath));
-    }
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:952b92994a96d73eae6c4ca08261235831c2c34c36708afa0b404023d8a643d5
+size 313

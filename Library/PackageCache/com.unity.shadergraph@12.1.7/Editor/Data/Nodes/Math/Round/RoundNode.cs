@@ -1,30 +1,3 @@
-using System.Reflection;
-
-namespace UnityEditor.ShaderGraph
-{
-    [Title("Math", "Round", "Round")]
-    class RoundNode : CodeFunctionNode
-    {
-        public RoundNode()
-        {
-            name = "Round";
-        }
-
-        protected override MethodInfo GetFunctionToConvert()
-        {
-            return GetType().GetMethod("Unity_Round", BindingFlags.Static | BindingFlags.NonPublic);
-        }
-
-        static string Unity_Round(
-            [Slot(0, Binding.None)] DynamicDimensionVector In,
-            [Slot(1, Binding.None)] out DynamicDimensionVector Out)
-        {
-            return
-@"
-{
-    Out = round(In);
-}
-";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:058b416adab50285da6cae9d1e7f25a26185f80d762fbe5e07d5c2270c10ba5f
+size 648

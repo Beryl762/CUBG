@@ -1,15 +1,3 @@
-using System;
-using Unity.Services.Core.Networking.Internal;
-
-namespace Unity.Services.Core.Networking
-{
-    [Serializable]
-    struct HttpServiceConfig
-    {
-        public string ServiceId;
-
-        public string BaseUrl;
-
-        public HttpOptions DefaultOptions;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e23590ad970df7355a555db69663243b2dc843e98090bd98709872fc4194a115
+size 291

@@ -1,16 +1,3 @@
-//
-// This file was automatically generated. Please don't edit by hand. Execute Editor command [ Edit > Rendering > Generate Shader Includes ] instead
-//
-
-#ifndef PROBEREFERENCEVOLUME_DEBUG_CS_HLSL
-#define PROBEREFERENCEVOLUME_DEBUG_CS_HLSL
-//
-// UnityEngine.Experimental.Rendering.DebugProbeShadingMode:  static fields
-//
-#define DEBUGPROBESHADINGMODE_SH (0)
-#define DEBUGPROBESHADINGMODE_VALIDITY (1)
-#define DEBUGPROBESHADINGMODE_VALIDITY_OVER_DILATION_THRESHOLD (2)
-#define DEBUGPROBESHADINGMODE_SIZE (3)
-
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:4cd9ab1f6fc904b3debf651a0a29ec2cc4cab8437a97099e883691ed2a43be30
+size 518

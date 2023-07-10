@@ -1,31 +1,3 @@
-using System;
-
-namespace UnityEditor.ShaderGraph
-{
-    [GenerationAPI]
-    internal enum InstancingOptions
-    {
-        RenderingLayer,
-        NoLightProbe,
-        NoLodFade,
-    }
-
-    [GenerationAPI]
-    internal static class InstancingOptionsExtensions
-    {
-        public static string ToShaderString(this InstancingOptions options)
-        {
-            switch (options)
-            {
-                case InstancingOptions.RenderingLayer:
-                    return "renderinglayer";
-                case InstancingOptions.NoLightProbe:
-                    return "nolightprobe";
-                case InstancingOptions.NoLodFade:
-                    return "nolodfade";
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1ae61711785ce3e1b7248f8df14509f9b73c15ec90740535fa64de183eb835e1
+size 798

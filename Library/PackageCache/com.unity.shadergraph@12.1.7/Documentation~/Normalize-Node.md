@@ -1,23 +1,3 @@
-# Normalize Node
-
-## Description
-
-Returns the normalized value of input **In**. The output vector will have the same direction as input **In** but a length of 1.
-
-## Ports
-
-| Name        | Direction           | Type  | Description |
-|:------------ |:-------------|:-----|:---|
-| In      | Input | Dynamic Vector | Input value |
-| Out | Output      |    Dynamic Vector | Output value |
-
-## Generated Code Example
-
-The following example code represents one possible outcome of this node.
-
-```
-void Unity_Normalize_float4(float4 In, out float4 Out)
-{
-    Out = normalize(In);
-}
-```
+version https://git-lfs.github.com/spec/v1
+oid sha256:ebbbe99d36a2706488a5d285cff5ed7f3f76e733f8036b2877875db87c4ce948
+size 579

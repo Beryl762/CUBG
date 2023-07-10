@@ -1,24 +1,3 @@
-# Subtract Node
-
-## Description
-
-Returns the result of input **A** minus input **B**.
-
-## Ports
-
-| Name        | Direction           | Type  | Description |
-|:------------ |:-------------|:-----|:---|
-| A      | Input | Dynamic Vector | First input value |
-| B      | Input      |   Dynamic Vector | Second input value |
-| Out | Output      |    Dynamic Vector | Output value |
-
-## Generated Code Example
-
-The following example code represents one possible outcome of this node.
-
-```
-void Unity_Subtract_float4(float4 A, float4 B, out float4 Out)
-{
-    Out = A - B;
-}
-```
+version https://git-lfs.github.com/spec/v1
+oid sha256:f2535a8b3763d2af1ad3499a28a4869e2b95c3b1fb5b1c7dd3e392182ed1bf33
+size 572

@@ -1,19 +1,3 @@
-//
-// This file was automatically generated. Please don't edit by hand. Execute Editor command [ Edit > Rendering > Generate Shader Includes ] instead
-//
-
-#ifndef SHADERTYPES_CS_HLSL
-#define SHADERTYPES_CS_HLSL
-// Generated from UnityEngine.Rendering.BuiltIn.ShaderInput+LightData
-// PackingRules = Exact
-struct LightData
-{
-    float4 position;
-    float4 color;
-    float4 attenuation;
-    float4 spotDirection;
-    float4 occlusionProbeChannels;
-};
-
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:a3efe7cf7e5dff5dace6d069c98b38617492412f30c99d606f61f484c712ed20
+size 460

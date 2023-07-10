@@ -1,31 +1,3 @@
-using System.Reflection;
-
-namespace UnityEditor.ShaderGraph
-{
-    [Title("Math", "Basic", "Square Root")]
-    class SquareRootNode : CodeFunctionNode
-    {
-        public SquareRootNode()
-        {
-            name = "Square Root";
-            synonyms = new string[] { "sqrt" };
-        }
-
-        protected override MethodInfo GetFunctionToConvert()
-        {
-            return GetType().GetMethod("Unity_SquareRoot", BindingFlags.Static | BindingFlags.NonPublic);
-        }
-
-        static string Unity_SquareRoot(
-            [Slot(0, Binding.None)] DynamicDimensionVector In,
-            [Slot(1, Binding.None)] out DynamicDimensionVector Out)
-        {
-            return
-@"
-{
-    Out = sqrt(In);
-}
-";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9a43470fae834478748aa9b865d4f155aef21d3c1416d53f1814ec8647f5eedc
+size 727

@@ -1,24 +1,3 @@
-using System.Collections.Generic;
-
-namespace Unity.Services.Core.Telemetry.Internal
-{
-    /// <summary>
-    /// Object used to send diagnostic events to the backend.
-    /// </summary>
-    public interface IDiagnostics
-    {
-        /// <summary>
-        /// Send a diagnostic event to the telemetry service to report unexpected behaviour.
-        /// </summary>
-        /// <param name="name">
-        /// Name of the event.
-        /// </param>
-        /// <param name="message">
-        /// An error message describing what error occured.
-        /// </param>
-        /// <param name="tags">
-        /// Event tags.
-        /// </param>
-        void SendDiagnostic(string name, string message, IDictionary<string, string> tags = null);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:33e2720176908e842b9c3d3aad04480e18e0303db45de2eab17f36b8f662b32d
+size 771

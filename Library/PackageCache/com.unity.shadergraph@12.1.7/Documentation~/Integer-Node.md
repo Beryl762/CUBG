@@ -1,25 +1,3 @@
-# Integer Node
-
-## Description
-
-Defines a constant **Float** value in the shader using an **Integer** field. Can be converted to a **Float** type [Property](Property-Types.md) with a **Mode** setting of **Integer** via the [Node's](Node.md) context menu.
-
-## Ports
-
-| Name        | Direction           | Type  | Binding | Description |
-|:------------ |:-------------|:-----|:---|:---|
-| Out | Output      |    Float    | None | Output value |
-
-## Controls
-
-| Name        | Type           | Options  | Description |
-|:------------ |:-------------|:-----|:---|
-|       | Integer |  | Defines the output value. |
-
-## Generated Code Example
-
-The following example code represents one possible outcome of this node.
-
-```
-float _Integer = 1;
-```
+version https://git-lfs.github.com/spec/v1
+oid sha256:f22d534689f69ea1bf710ce360b81fd4a78f695ce0d353cc091388defc5c6c11
+size 740

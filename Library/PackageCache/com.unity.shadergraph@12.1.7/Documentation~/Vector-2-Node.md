@@ -1,21 +1,3 @@
-# Vector 2 Node
-
-## Description
-
-Defines a **Vector 2** value in the shader. If [Ports](Port.md) **X** and **Y** are not connected with [Edges](Edge.md) this [Node](Node.md) defines a constant **Vector 2**, otherwise this [Node](Node.md) can be used to combine various **Float** values.
-
-## Ports
-
-| Name        | Direction           | Type  | Binding | Description |
-|:------------ |:-------------|:-----|:---|:---|
-| X      | Input | Float    | None | Input x component value |
-| Y      | Input | Float    | None | Input y component value |
-| Out | Output      |    Vector 2 | None | Output value |
-
-## Generated Code Example
-
-The following example code represents one possible outcome of this node.
-
-```
-float2 _Vector2_Out = float2(X, Y);
-```
+version https://git-lfs.github.com/spec/v1
+oid sha256:2decc030c865db59806675174a58f5e481cc92727d409930807e517c54f42a81
+size 747

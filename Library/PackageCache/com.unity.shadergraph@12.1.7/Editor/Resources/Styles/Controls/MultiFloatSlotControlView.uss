@@ -1,29 +1,3 @@
-MultiFloatSlotControlView {
-    flex-direction: row;
-    align-items: center;
-}
-
-#dummy > Label {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    cursor: slide-arrow;
-    -unity-text-align: middle-left;
-}
-
-.unity-base-field {
-    width: 30px;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    -unity-text-align: middle-left;
-}
-
-.unity-base-field__input{
-    margin-left: 0;
-    margin-right: 0;
-}
-
-FloatField.unity-double-field {
-    padding-left: 0;
-    padding-right: 0;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:07edc1eb7972fe0998ae209c8d1d880d7454079010eaafe901985d78c10296d8
+size 493

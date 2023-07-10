@@ -1,11 +1,3 @@
-# Eye Index Node
-
-## Description
-
-Provides access to the **Eye Index** when stereo rendering is enabled.
-
-## Ports
-
-| Name   | Direction  | Type  | Binding | Description |
-|:-------|:-----------|:------|:--------|:------------|
-| Out    | Output     | Float | None    | **Eye Index** for the camera of a stereo draw. |
+version https://git-lfs.github.com/spec/v1
+oid sha256:521c4c1303251f3ff2fb03ddc85833560c68852094b2829b24b1bbcbfbd73562
+size 319

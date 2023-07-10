@@ -1,32 +1,3 @@
-using System;
-using UnityEditor.Graphing;
-using UnityEngine;
-
-using UnityEngine.UIElements;
-
-namespace UnityEditor.ShaderGraph.Drawing.Slots
-{
-    class BooleanSlotControlView : VisualElement
-    {
-        BooleanMaterialSlot m_Slot;
-
-        public BooleanSlotControlView(BooleanMaterialSlot slot)
-        {
-            styleSheets.Add(Resources.Load<StyleSheet>("Styles/Controls/BooleanSlotControlView"));
-            m_Slot = slot;
-            var toggleField = new Toggle() { value = m_Slot.value };
-            toggleField.OnToggleChanged(OnChangeToggle);
-            Add(toggleField);
-        }
-
-        void OnChangeToggle(ChangeEvent<bool> evt)
-        {
-            if (evt.newValue != m_Slot.value)
-            {
-                m_Slot.owner.owner.owner.RegisterCompleteObjectUndo("Toggle Change");
-                m_Slot.value = evt.newValue;
-                m_Slot.owner.Dirty(ModificationScope.Node);
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d13223207ed9ae1030fddb2858e63133d74574603d77ac8c716b91232c102798
+size 946

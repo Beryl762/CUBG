@@ -1,15 +1,3 @@
-namespace UnityEditor.ShaderGraph
-{
-    [GenerationAPI]
-    internal struct FieldDependency
-    {
-        public FieldDescriptor field;
-        public FieldDescriptor dependsOn;
-
-        public FieldDependency(FieldDescriptor field, FieldDescriptor dependsOn)
-        {
-            this.field = field;
-            this.dependsOn = dependsOn;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a90526a18b1004d3a66d45795b3801aae2a44a52f186f07ced658edeea781323
+size 360

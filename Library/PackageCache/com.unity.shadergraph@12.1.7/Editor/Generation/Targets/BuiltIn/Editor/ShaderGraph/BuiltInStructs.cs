@@ -1,36 +1,3 @@
-using UnityEditor.ShaderGraph;
-
-namespace UnityEditor.Rendering.BuiltIn.ShaderGraph
-{
-    static class BuiltInStructs
-    {
-        public static StructDescriptor Varyings = new StructDescriptor()
-        {
-            name = "Varyings",
-            packFields = true,
-            populateWithCustomInterpolators = true,
-            fields = new FieldDescriptor[]
-            {
-                StructFields.Varyings.positionCS,
-                StructFields.Varyings.positionWS,
-                StructFields.Varyings.normalWS,
-                StructFields.Varyings.tangentWS,
-                StructFields.Varyings.texCoord0,
-                StructFields.Varyings.texCoord1,
-                StructFields.Varyings.texCoord2,
-                StructFields.Varyings.texCoord3,
-                StructFields.Varyings.color,
-                StructFields.Varyings.viewDirectionWS,
-                StructFields.Varyings.screenPosition,
-                BuiltInStructFields.Varyings.lightmapUV,
-                BuiltInStructFields.Varyings.sh,
-                BuiltInStructFields.Varyings.fogFactorAndVertexLight,
-                BuiltInStructFields.Varyings.shadowCoord,
-                StructFields.Varyings.instanceID,
-                BuiltInStructFields.Varyings.stereoTargetEyeIndexAsBlendIdx0,
-                BuiltInStructFields.Varyings.stereoTargetEyeIndexAsRTArrayIdx,
-                StructFields.Varyings.cullFace,
-            }
-        };
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a3220f06bbaf6f8259c81563fb5ea42236b437cc740a68ce9a8f5244892b2d5f
+size 1447

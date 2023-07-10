@@ -1,25 +1,3 @@
-# Matrix 4x4 Node
-
-## Description
-
-Defines a constant **Matrix 4x4** value in the shader.
-
-## Ports
-
-| Name        | Direction           | Type  | Binding | Description |
-|:------------ |:-------------|:-----|:---|:---|
-| Out | Output      |    Matrix 4 | None | Output value |
-
-## Controls
-
-| Name        | Type           | Options  | Description |
-|:------------ |:-------------|:-----|:---|
-|  | Matrix 4x4 |  | Sets output value |
-
-## Generated Code Example
-
-The following example code represents one possible outcome of this node.
-
-```
-float4x4 _Matrix4x4 = float4x4(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-```
+version https://git-lfs.github.com/spec/v1
+oid sha256:62622a715f39452be82a0f524ea5911a486052c0bc0c78ab8f2390817b6ad549
+size 625

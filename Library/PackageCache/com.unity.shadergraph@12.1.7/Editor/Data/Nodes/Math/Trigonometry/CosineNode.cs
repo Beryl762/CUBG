@@ -1,30 +1,3 @@
-using System.Reflection;
-
-namespace UnityEditor.ShaderGraph
-{
-    [Title("Math", "Trigonometry", "Cosine")]
-    class CosineNode : CodeFunctionNode
-    {
-        public CosineNode()
-        {
-            name = "Cosine";
-        }
-
-        protected override MethodInfo GetFunctionToConvert()
-        {
-            return GetType().GetMethod("Unity_Cosine", BindingFlags.Static | BindingFlags.NonPublic);
-        }
-
-        static string Unity_Cosine(
-            [Slot(0, Binding.None)] DynamicDimensionVector In,
-            [Slot(1, Binding.None)] out DynamicDimensionVector Out)
-        {
-            return
-@"
-{
-    Out = cos(In);
-}
-";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a2a840c316410e7eea28e59c5618ecf715a9b2f1cb28174471bb5310db866ec6
+size 659

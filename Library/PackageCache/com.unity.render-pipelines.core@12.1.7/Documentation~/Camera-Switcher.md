@@ -1,9 +1,3 @@
-# Camera Switcher
-
-The **CameraSwitcher** component allows you to define a List of Cameras in the Scene and then use the Debug Window to switch between them in Play Mode. This is useful when you want a set of different fixed views for profiling purposes where you need to guarantee that the Camera view is in the same position between sessions.
-
-## Properties
-
-| **Property** | **Description**                                              |
-| ------------ | ------------------------------------------------------------ |
-| **Cameras**  | Drag and drop GameObjects that have a Camera component attached to add them to this List of Cameras. The Debug Window can switch between the Cameras in this List. |
+version https://git-lfs.github.com/spec/v1
+oid sha256:5f608151fb46791e11ca9359ccf7aa64b4a0488d8d05facb5b04be0ca2b98ba2
+size 703

@@ -1,25 +1,3 @@
-# Remap Node
-
-## Description
-
-Returns a value between the x and y components of input **Out Min Max** based on the linear interpolation of the value of input **In** between the x and y components of input **In Min Max**.
-
-## Ports
-
-| Name        | Direction           | Type  | Description |
-|:------------ |:-------------|:-----|:---|
-| In      | Input | Dynamic Vector | Input value |
-| In Min Max      | Input | Vector 2 | Minimum and Maximum values for input interpolation |
-| Out Min Max      | Input | Vector 2 | Minimum and Maximum values for output interpolation |
-| Out | Output      |    Dynamic Vector | Output value |
-
-## Generated Code Example
-
-The following example code represents one possible outcome of this node.
-
-```
-void Unity_Remap_float4(float4 In, float2 InMinMax, float2 OutMinMax, out float4 Out)
-{
-    Out = OutMinMax.x + (In - InMinMax.x) * (OutMinMax.y - OutMinMax.x) / (InMinMax.y - InMinMax.x);
-}
-```
+version https://git-lfs.github.com/spec/v1
+oid sha256:a260610f40f00df58458b0a41877e3669f2f5f0d762682683d7b42361d6bc5e4
+size 931

@@ -1,35 +1,3 @@
-using System;
-using UnityEditor.Graphing;
-using UnityEngine;
-using Object = UnityEngine.Object;
-
-using UnityEditor.UIElements;
-using UnityEngine.UIElements;
-
-namespace UnityEditor.ShaderGraph.Drawing.Slots
-{
-    class CubemapSlotControlView : VisualElement
-    {
-        CubemapInputMaterialSlot m_Slot;
-
-        public CubemapSlotControlView(CubemapInputMaterialSlot slot)
-        {
-            styleSheets.Add(Resources.Load<StyleSheet>("Styles/Controls/CubemapSlotControlView"));
-            m_Slot = slot;
-            var objectField = new ObjectField { objectType = typeof(Cubemap), value = m_Slot.cubemap };
-            objectField.RegisterValueChangedCallback(OnValueChanged);
-            Add(objectField);
-        }
-
-        void OnValueChanged(ChangeEvent<Object> evt)
-        {
-            var cubemap = evt.newValue as Cubemap;
-            if (cubemap != m_Slot.cubemap)
-            {
-                m_Slot.owner.owner.owner.RegisterCompleteObjectUndo("Change Cubemap");
-                m_Slot.cubemap = cubemap;
-                m_Slot.owner.Dirty(ModificationScope.Node);
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7fed7034f3f3df3019529245e4261e2cb4a65aee884aeef125083ec1a28a0513
+size 1117

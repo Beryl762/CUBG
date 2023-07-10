@@ -1,22 +1,3 @@
-namespace UnityEngine.Rendering
-{
-    /// <summary>
-    /// XR Utility class.
-    /// </summary>
-    public static class XRUtils
-    {
-        /// <summary>
-        /// Draw the XR occlusion mesh.
-        /// </summary>
-        /// <param name="cmd">Command Buffer used to draw the occlusion mesh.</param>
-        /// <param name="camera">Camera for which the occlusion mesh is rendered.</param>
-        /// <param name="stereoEnabled">True if stereo rendering is enabled.</param>
-        public static void DrawOcclusionMesh(CommandBuffer cmd, Camera camera, bool stereoEnabled = true) // Optional stereoEnabled is for SRP-specific stereo logic
-        {
-            if ((!XRGraphics.enabled) || (!camera.stereoEnabled) || (!stereoEnabled))
-                return;
-            UnityEngine.RectInt normalizedCamViewport = new UnityEngine.RectInt(0, 0, camera.pixelWidth, camera.pixelHeight);
-            cmd.DrawOcclusionMesh(normalizedCamViewport);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:88835db59fa75f4ac275f8eecb0e94438ee1adcdbfba0f96f2e65d530be8ef7b
+size 968

@@ -1,26 +1,3 @@
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace UnityEditor.Rendering
-{
-    /// <summary>
-    /// Interface to extend to provide UI
-    /// </summary>
-    public interface ICoreRenderPipelinePreferencesProvider
-    {
-        /// <summary>
-        /// The list of keywords
-        /// </summary>
-        List<string> keywords { get; }
-
-        /// <summary>
-        /// The header of the preferences
-        /// </summary>
-        GUIContent header { get; }
-
-        /// <summary>
-        /// The main method to render the user interface
-        /// </summary>
-        void PreferenceGUI();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4f629a2bd2b003e8857ec4fec113fac222e68ade1044b9947f1e67a425382e37
+size 614

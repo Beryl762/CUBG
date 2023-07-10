@@ -1,13 +1,3 @@
-namespace UnityEngine.Rendering
-{
-    /// <summary>
-    /// By implementing this interface, a render pipeline can indicate to external code it supports virtual texturing.
-    /// </summary>
-    public interface IVirtualTexturingEnabledRenderPipeline
-    {
-        /// <summary>
-        /// Indicates if virtual texturing is currently enabled for this render pipeline instance.
-        /// </summary>
-        bool virtualTexturingEnabled { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fb58184a7aa5b9c1ac60000c78c6b865445cdd57b4eb1677caafe4afca4eb6f5
+size 454

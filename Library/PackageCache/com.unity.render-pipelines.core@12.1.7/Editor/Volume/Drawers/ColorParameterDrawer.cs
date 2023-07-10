@@ -1,21 +1,3 @@
-using UnityEngine;
-using UnityEngine.Rendering;
-
-namespace UnityEditor.Rendering
-{
-    [VolumeParameterDrawer(typeof(ColorParameter))]
-    sealed class ColorParameterDrawer : VolumeParameterDrawer
-    {
-        public override bool OnGUI(SerializedDataParameter parameter, GUIContent title)
-        {
-            var value = parameter.value;
-
-            if (value.propertyType != SerializedPropertyType.Color)
-                return false;
-
-            var o = parameter.GetObjectRef<ColorParameter>();
-            value.colorValue = EditorGUILayout.ColorField(title, value.colorValue, o.showEyeDropper, o.showAlpha, o.hdr);
-            return true;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:80d087d5f663af7c2257bea85328833ea57263dea412247afed61f2ceff71e02
+size 669

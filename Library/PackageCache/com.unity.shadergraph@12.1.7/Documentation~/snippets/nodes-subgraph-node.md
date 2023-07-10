@@ -1,6 +1,3 @@
----
-title: nodes-subgraph-node
----
-
-> [!NOTE]
-> This node is a Subgraph node: it represents a Subgraph instead of directly representing Unity's shader code. Double-click the node in any Shader Graph to view its Subgraph.
+version https://git-lfs.github.com/spec/v1
+oid sha256:bab41e0cb73571adddc675945f50ddc8e804418ac6e4d6626a178a5545db1374
+size 221
