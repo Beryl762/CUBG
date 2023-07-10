@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:46cf6c51752bc87345191f40c10146b151f628290e4393a79996e11debe1904b
-size 563
+Temp/
+Logs/
+Library/
+#服务器开发需要这个东西，先注释了
+#*.csproj
+*.suo
+#*.sln
+*.idea
+#我自己用的目录
+_AAAAAA/
+#忽略具体文件
+test/client/Dragonfly/Assets/_AAAAAA.meta
+*.vsconfig
+#vs相关
+obj/
+bin/
+bin/Debug/
+obj/Debug/
+.vs/
+Dragonfly/test/client/Dragonfly/Assets/_AAAAAA.meta
+DarkStarSingularity/test/client/DarkStarSingularity/Assets/_AAAAAA.meta
+#excel文件打开后会加~$一个开头的文件
+~$*
+#目前来看服务器开发需要.csproj ，DotNetty应该是在这个文件中存储的
+*.csproj
+*.sln

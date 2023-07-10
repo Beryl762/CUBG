@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7bb16a43b8338b8d007361c54828a88a7e96406324ce1498249b60b1f60ff77d
-size 173
+fileFormatVersion: 2
+guid: 9b194cac33935c94d9ba3ec86f1226d7
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: ui/start/startpanel
+  assetBundleVariant: 

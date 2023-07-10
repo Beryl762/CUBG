@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:79a798ac116e50de4d7ce1e456e5acce4ab39564082cc69c8e8584fddbbdc0e4
-size 684
+
+local UIManager = {}
+
+
+function UIManager:OpenUI(UIName, ...)
+    local ui = UIConfig[UIName]
+    if ui == nil then
+        print("UIConfig[" .. UIName .. "] is nil")
+        return
+    end
+    return self:LoadUI(ui.LoadPath, ...)
+end
+
+--Resources 加载UI界面
+function UIManager:LoadUI(LoadPath, ...)
+    local path = LoadPath
+    local obj = Resources.Load(path)
+    if obj == nil then
+        print("Resources.Load[" .. path .. "] is nil")
+        return
+    end
+    local go = GameObject.Instantiate(obj)
+    if go == nil then
+        print("GameObject.Instantiate[" .. path .. "] is nil")
+        return
+    end
+    return go
+end
+
+return UIManager
