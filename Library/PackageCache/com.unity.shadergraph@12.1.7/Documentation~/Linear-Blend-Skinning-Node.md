@@ -1,15 +1,3 @@
-# Linear Blend Skinning Node
-
-## Description
-
-This node lets you apply Linear Blend Vertex Skinning, and only works with the [DOTS Hybrid Renderer](https://docs.unity3d.com/Packages/com.unity.rendering.hybrid@latest/). You must provide skinned matrices in the `_SkinMatrices` buffer. The node uses the `_SkinMatrixIndex` property to calculate where the matrices associated with the current mesh are located in the `_SkinMatrices` buffer.
-
-## Ports
-| Name      | Direction  | Type    | Stage  | Description |
-|:--------- |:-----------|:--------|:-------|:------------|
-| Position  | Input      | Vector3 | Vertex | Position of the vertex in object space. |
-| Normal    | Input      | Vector3 | Vertex | Normal of the vertex in object space. |
-| Tangent   | Input      | Vector3 | Vertex | Tangent of the vertex in object space. |
-| Position  | Output     | Vector3 | Vertex | Outputs the skinned vertex position. |
-| Normal    | Output     | Vector3 | Vertex | Outputs the skinned vertex normal. |
-| Tangent   | Output     | Vector3 | Vertex | Outputs the skinned vertex tangent. |
+version https://git-lfs.github.com/spec/v1
+oid sha256:70d7cd1b335e280c1a9d54314526d3943d6ad13174a5ff52e83b565b447f9376
+size 1081

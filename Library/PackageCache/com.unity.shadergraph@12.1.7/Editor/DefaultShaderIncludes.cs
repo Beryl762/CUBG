@@ -1,15 +1,3 @@
-using System.IO;
-using System.Linq;
-using UnityEngine;
-
-namespace UnityEditor
-{
-    internal static class DefaultShaderIncludes
-    {
-        public static string GetAssetsPackagePath()
-        {
-            var packageDirectories = Directory.GetDirectories(Application.dataPath, "com.unity.shadergraph", SearchOption.AllDirectories);
-            return packageDirectories.Length == 0 ? null : Path.GetFullPath(packageDirectories.First());
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2591afc6d13d31e03835efba45b68344366a23cbf8a940c4da8e9a4b85e70ba4
+size 458

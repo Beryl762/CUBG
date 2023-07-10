@@ -1,34 +1,3 @@
-#if TEST_FRAMEWORK
-using System;
-using System.Collections.Generic;
-using JetBrains.Annotations;
-using UnityEditor;
-
-namespace Packages.Rider.Editor.UnitTesting
-{
-  internal class CallbackData : ScriptableSingleton<CallbackData>
-  {
-    /// <summary>
-    /// identifies that tests were started from Rider
-    /// </summary>
-    public bool isRider;
-
-    [UsedImplicitly] // Is used by Rider Unity plugin by reflection
-    public static event EventHandler Changed = (sender, args) => { }; 
-
-    internal void RaiseChangedEvent()
-    {
-      Changed(null, EventArgs.Empty);
-    }
-
-    [UsedImplicitly] // Is used by Rider Unity plugin by reflection
-    public List<TestEvent> events = new List<TestEvent>();
-    
-    [UsedImplicitly] // Is used by Rider Unity plugin by reflection
-    public void Clear()
-    {
-      events.Clear();
-    }
-  }
-}
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:cb3931bf749879ee6c652e6bad07e4ee6b779cb56c8b88f172519e3c38bbd2bd
+size 881

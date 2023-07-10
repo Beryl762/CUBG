@@ -1,18 +1,3 @@
-UnityEngine = CS.UnityEngine
-
-Resources = UnityEngine.Resources
-GameObject = UnityEngine.GameObject
-Transform = UnityEngine.Transform
-
-UI = UnityEngine.UI
-Canvas = UnityEngine.Canvas
-Text = UI.Text
-Image = UI.Image
-Button = UI.Button
-Toggle = UI.Toggle
-Slider = UI.Slider
-Scrollbar = UI.Scrollbar
-
-
-UIManager = require ("Framework/UI/UIMananger")
-UIConfig = require ("UI/UIConfig")
+version https://git-lfs.github.com/spec/v1
+oid sha256:15bf440da8ca51c7b17d1e1163a5e525fbb8aff4703c0facd9332833ea69a3f4
+size 553

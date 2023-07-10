@@ -1,32 +1,3 @@
-using System.Reflection;
-
-namespace UnityEditor.ShaderGraph
-{
-    [Title("Math", "Interpolation", "Smoothstep")]
-    class SmoothstepNode : CodeFunctionNode
-    {
-        public SmoothstepNode()
-        {
-            name = "Smoothstep";
-            synonyms = new string[] { "curve" };
-        }
-
-        protected override MethodInfo GetFunctionToConvert()
-        {
-            return GetType().GetMethod("Unity_Smoothstep", BindingFlags.Static | BindingFlags.NonPublic);
-        }
-
-        static string Unity_Smoothstep(
-            [Slot(0, Binding.None, 0, 0, 0, 0)] DynamicDimensionVector Edge1,
-            [Slot(1, Binding.None, 1, 1, 1, 1)] DynamicDimensionVector Edge2,
-            [Slot(2, Binding.None, 0, 0, 0, 0)] DynamicDimensionVector In,
-            [Slot(3, Binding.None)] out DynamicDimensionVector Out)
-        {
-            return
-@"
-{
-    Out = smoothstep(Edge1, Edge2, In);
-}";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:73e82ea72b0e737d05149f1e0dc08037398e7b1b08138570c8e02c29b0659ca0
+size 921

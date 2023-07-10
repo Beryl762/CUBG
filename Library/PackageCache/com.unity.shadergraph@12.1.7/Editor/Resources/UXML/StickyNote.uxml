@@ -1,11 +1,3 @@
-<UXML xmlns:ui="UnityEngine.UIElements" xmlns:sg="UnityEditor.ShaderGraph.Drawing">
-  <ui:VisualElement name="node-border" pickingMode="Ignore" >
-    <ui:Label name="title" />
-    <ui:TextField name="title-field" />
-    <ui:Label name="contents">
-      <ui:TextField name="contents-field" />
-    </ui:Label>
-  </ui:VisualElement>
-  <ui:VisualElement name="selection-border" pickingMode="Ignore" />
-  <sg:ResizableElement pickingMode="Ignore" />
-</UXML>
+version https://git-lfs.github.com/spec/v1
+oid sha256:e780f32ad01cb9fe4604331e7c49ccfe0554a74278185d676c6d03b612725218
+size 453

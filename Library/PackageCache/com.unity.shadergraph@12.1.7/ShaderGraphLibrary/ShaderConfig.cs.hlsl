@@ -1,15 +1,3 @@
-//
-// This file was automatically generated. Please don't edit by hand.
-//
-
-#ifndef SHADERCONFIG_CS_HLSL
-#define SHADERCONFIG_CS_HLSL
-//
-// UnityEngine.Rendering.HighDefinition.ShaderOptions:  static fields
-//
-#define SHADEROPTIONS_VELOCITY_IN_GBUFFER (0)
-#define SHADEROPTIONS_PACK_GBUFFER_IN_U16 (0)
-#define SHADEROPTIONS_CAMERA_RELATIVE_RENDERING (1)
-
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:e61be82d7cb23b5273754c145afca2ff3b106c5be2a882ec381292dd29a80293
+size 363

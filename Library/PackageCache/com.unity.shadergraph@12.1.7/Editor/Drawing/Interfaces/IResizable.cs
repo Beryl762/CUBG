@@ -1,10 +1,3 @@
-using UnityEditor.Experimental.GraphView;
-
-namespace UnityEditor.ShaderGraph.Drawing.Interfaces
-{
-    interface ISGResizable : IResizable
-    {
-        // Depending on the return value, the ElementResizer either allows resizing past parent view edge (like in case of StickyNote) or clamps the size at the edges of parent view (like for GraphSubWindows)
-        bool CanResizePastParentBounds();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fef6cf2c2aa6330056c7fb3981bf656f416053471b01348a0b07b2e58801e14e
+size 403

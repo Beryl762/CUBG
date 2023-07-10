@@ -1,36 +1,3 @@
-using System;
-using System.Collections.Generic;
-using Newtonsoft.Json;
-
-namespace Unity.Services.Core.Telemetry.Internal
-{
-    [Serializable]
-    struct DiagnosticsPayload : ITelemetryPayload
-    {
-        [JsonProperty("diagnostics")]
-        public List<Diagnostic> Diagnostics;
-
-        [JsonProperty("commonTags")]
-        public Dictionary<string, string> CommonTags;
-
-        [JsonProperty("diagnosticsCommonTags")]
-        public Dictionary<string, string> DiagnosticsCommonTags;
-
-        Dictionary<string, string> ITelemetryPayload.CommonTags => CommonTags;
-
-        int ITelemetryPayload.Count => Diagnostics?.Count ?? 0;
-
-        void ITelemetryPayload.Add(ITelemetryEvent telemetryEvent)
-        {
-            if (!(telemetryEvent is Diagnostic diagnostic))
-                throw new ArgumentException("This payload accepts only Diagnostic events.");
-
-            if (Diagnostics is null)
-            {
-                Diagnostics = new List<Diagnostic>(1);
-            }
-
-            Diagnostics.Add(diagnostic);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:898fb1e8c4a55951e601a01707149361be8df3f470cb3cfb576c9b847a4fd98d
+size 1080

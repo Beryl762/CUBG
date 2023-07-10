@@ -1,26 +1,3 @@
-# Screen Node
-
-## Description
-
-Provides access to parameters of the screen.
-
-#### Unity Render Pipelines Support
-- Universal Render Pipeline
-
-The High Definition Render Pipeline does **not** support this Node.
-
-## Ports
-
-| Name        | Direction           | Type  | Binding | Description |
-|:------------ |:-------------|:-----|:---|:---|
-| Width | Output      |    Float    | None | Screen's width in pixels |
-| Height | Output      |    Float    | None | Screen's height in pixels |
-
-## Generated Code Example
-
-The following example code represents one possible outcome of this node.
-
-```
-float _Screen_Width = _ScreenParams.x;
-float _Screen_Height = _ScreenParams.y;
-```
+version https://git-lfs.github.com/spec/v1
+oid sha256:33578fe7503435245db1067c84c03ab798708440651dc543cb2c210dad34c8d0
+size 675

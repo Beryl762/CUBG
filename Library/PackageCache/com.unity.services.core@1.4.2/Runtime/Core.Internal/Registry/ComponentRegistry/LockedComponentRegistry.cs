@@ -1,35 +1,3 @@
-using System;
-using System.Collections.Generic;
-using NotNull = JetBrains.Annotations.NotNullAttribute;
-
-namespace Unity.Services.Core.Internal
-{
-    class LockedComponentRegistry : IComponentRegistry
-    {
-        const string k_ErrorMessage = "Component registration has been locked. " +
-            "Make sure to register service components before all packages have finished initializing.";
-
-        [NotNull]
-        internal IComponentRegistry Registry { get; }
-
-        public LockedComponentRegistry(
-            [NotNull] IComponentRegistry registryToLock)
-        {
-            Registry = registryToLock;
-        }
-
-        public void RegisterServiceComponent<TComponent>(TComponent component)
-            where TComponent : IServiceComponent
-        {
-            throw new InvalidOperationException(k_ErrorMessage);
-        }
-
-        public TComponent GetServiceComponent<TComponent>()
-            where TComponent : IServiceComponent
-        {
-            return Registry.GetServiceComponent<TComponent>();
-        }
-
-        public void ResetProvidedComponents(IDictionary<int, IServiceComponent> componentTypeHashToInstance) => throw new InvalidOperationException(k_ErrorMessage);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0a8fc2b671941d5375f69598dc69c9616b91650680f52b4cf67ccc071d15c2f2
+size 1240

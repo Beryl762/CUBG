@@ -1,18 +1,3 @@
-#ifndef UNITY_COMMON_DEPRECATED_INCLUDED
-#define UNITY_COMMON_DEPRECATED_INCLUDED
-
-// Function that are in this file shouldn't be use. they are obsolete and could be removed in the future
-// they are here to keep compatibility with previous version
-#if !defined(SHADER_API_GLES)
-// Please use void LODDitheringTransition(uint2 fadeMaskSeed, float ditherFactor)
-void LODDitheringTransition(uint3 fadeMaskSeed, float ditherFactor)
-{
-    ditherFactor = ditherFactor < 0.0 ? 1 + ditherFactor : ditherFactor;
-
-    float p = GenerateHashedRandomFloat(fadeMaskSeed);
-    p = (ditherFactor >= 0.5) ? p : 1 - p;
-    clip(ditherFactor - p);
-}
-#endif
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:10f3f46f71a001c77c5a80deee7d6b6710e10c5e2fcb6b63eafc1a036bca7c6d
+size 648

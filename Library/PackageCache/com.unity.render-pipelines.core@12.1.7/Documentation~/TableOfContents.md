@@ -1,18 +1,3 @@
-* [SRP Core](index.md)
-* [What's new](whats-new.md)
-  * [12](whats-new-12.md)
-* Camera components
-  * [Free Camera](Free-Camera.md)
-  * [Camera Switcher](Camera-Switcher.md)
-* [Render Graph](render-graph-system.md)
-  * [Benefits of the render graph system](render-graph-benefits.md)
-  * [Render graph fundamentals](render-graph-fundamentals.md)
-  * [Writing a Render Pipeline](render-graph-writing-a-render-pipeline.md)
-* [RTHandle system](rthandle-system.md)
-  * [RTHandle fundamentals](rthandle-system-fundamentals.md)
-  * [Using the RTHandle system](rthandle-system-using.md)
-* [Custom Material Inspector](custom-material-inspector.md)
-* [Synchronizing shader code and C#](generating-shader-includes.md)
-* [Look Dev](Look-Dev.md)
-  * [Environment Library](Look-Dev-Environment-Library.md)
-* [Light Anchor](view-lighting-tool.md)
+version https://git-lfs.github.com/spec/v1
+oid sha256:9b2307f9d9848c4bfbc52810f2b2a663723ad97357296c5e7f2c8407b66d8344
+size 832

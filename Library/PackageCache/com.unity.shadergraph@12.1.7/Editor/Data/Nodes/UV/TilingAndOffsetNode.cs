@@ -1,35 +1,3 @@
-using System.Reflection;
-using UnityEngine;
-
-namespace UnityEditor.ShaderGraph
-{
-    [Title("UV", "Tiling And Offset")]
-    class TilingAndOffsetNode : CodeFunctionNode
-    {
-        public TilingAndOffsetNode()
-        {
-            name = "Tiling And Offset";
-            synonyms = new string[] { "pan", "scale" };
-        }
-
-        protected override MethodInfo GetFunctionToConvert()
-        {
-            return GetType().GetMethod("Unity_TilingAndOffset", BindingFlags.Static | BindingFlags.NonPublic);
-        }
-
-        static string Unity_TilingAndOffset(
-            [Slot(0, Binding.MeshUV0)] Vector2 UV,
-            [Slot(1, Binding.None, 1f, 1f, 1f, 1f)] Vector2 Tiling,
-            [Slot(2, Binding.None, 0f, 0f, 0f, 0f)] Vector2 Offset,
-            [Slot(3, Binding.None)] out Vector2 Out)
-        {
-            Out = Vector2.zero;
-            return
-@"
-{
-    Out = UV * Tiling + Offset;
-}
-";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b5dcafa0425478144dd0225341151315368a989e645518723d6457ce9d845c93
+size 928

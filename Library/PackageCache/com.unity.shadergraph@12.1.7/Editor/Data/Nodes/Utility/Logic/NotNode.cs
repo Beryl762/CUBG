@@ -1,36 +1,3 @@
-using System.Reflection;
-using UnityEngine;
-
-namespace UnityEditor.ShaderGraph
-{
-    [Title("Utility", "Logic", "Not")]
-    class NotNode : CodeFunctionNode
-    {
-        public NotNode()
-        {
-            name = "Not";
-        }
-
-        public override bool hasPreview
-        {
-            get { return false; }
-        }
-
-        protected override MethodInfo GetFunctionToConvert()
-        {
-            return GetType().GetMethod("Unity_Not", BindingFlags.Static | BindingFlags.NonPublic);
-        }
-
-        static string Unity_Not(
-            [Slot(0, Binding.None)] Boolean In,
-            [Slot(1, Binding.None)] out Boolean Out)
-        {
-            return
-@"
-{
-    Out = !In;
-}
-";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6b1360ff74ff587fe63b5ee6c6166882c2f59fdd56ccc333109224398a9933d3
+size 717

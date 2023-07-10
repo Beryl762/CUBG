@@ -1,31 +1,3 @@
-using System.Reflection;
-
-namespace UnityEditor.ShaderGraph
-{
-    [Title("Math", "Round", "Ceiling")]
-    class CeilingNode : CodeFunctionNode
-    {
-        public CeilingNode()
-        {
-            name = "Ceiling";
-            synonyms = new string[] { "up" };
-        }
-
-        protected override MethodInfo GetFunctionToConvert()
-        {
-            return GetType().GetMethod("Unity_Ceiling", BindingFlags.Static | BindingFlags.NonPublic);
-        }
-
-        static string Unity_Ceiling(
-            [Slot(0, Binding.None)] DynamicDimensionVector In,
-            [Slot(1, Binding.None)] out DynamicDimensionVector Out)
-        {
-            return
-@"
-{
-    Out = ceil(In);
-}
-";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e536e3f18d782dc14b30d817e6e1533062275ce10073644b3ca6f160ba01dab6
+size 705

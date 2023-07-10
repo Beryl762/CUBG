@@ -1,16 +1,3 @@
-using System;
-using UnityEditor.ShaderGraph.Drawing;
-using UnityEngine;
-using UnityEditor;
-
-namespace UnityEditor.ShaderGraph
-{
-    // Used by the Material Inspector to draw UI for shader graph based materials, when no custom Editor GUI has been specified
-    class GenericShaderGraphMaterialGUI : ShaderGUI
-    {
-        public override void OnGUI(MaterialEditor materialEditor, MaterialProperty[] props)
-        {
-            ShaderGraphPropertyDrawers.DrawShaderGraphGUI(materialEditor, props);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:59b8e2528647188555d41c41f1cc2a12698bc40ff8df99ab3a6465da8873c0d4
+size 516

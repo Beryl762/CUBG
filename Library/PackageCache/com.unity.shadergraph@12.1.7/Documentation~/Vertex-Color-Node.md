@@ -1,11 +1,3 @@
-# Vertex Color Node
-
-## Description
-
-Provides access to the mesh vertex or fragment's **Vertex Color** value.
-
-## Ports
-
-| Name        | Direction           | Type  | Binding | Description |
-|:------------ |:-------------|:-----|:---|:---|
-| Out | Output      |    Vector 4 | None | **Vertex Color** for the Mesh Vertex/Fragment. |
+version https://git-lfs.github.com/spec/v1
+oid sha256:b3952b77668ac45611fbb21a054b27163fed6b90170bb4875db7cd99261fef1d
+size 332

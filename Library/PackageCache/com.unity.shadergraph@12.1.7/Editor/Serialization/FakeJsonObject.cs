@@ -1,33 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace UnityEditor.ShaderGraph.Serialization
-{
-    [Serializable]
-    public class FakeJsonObject
-    {
-        [SerializeField]
-        string m_Type;
-
-        [SerializeField]
-        string m_ObjectId;
-
-        public string id
-        {
-            get => m_ObjectId;
-            set => m_ObjectId = value;
-        }
-
-        public string type
-        {
-            get => m_Type;
-            set => m_Type = value;
-        }
-
-        public void Reset()
-        {
-            m_ObjectId = null;
-            m_Type = null;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1268e272a0e16b7893091e04b89db9023e9b26545a3508b10fab30f12c8ed2b6
+size 583

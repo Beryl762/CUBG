@@ -1,13 +1,3 @@
-using UnityEngine.UIElements;
-
-namespace UnityEditor.ShaderGraph.Drawing
-{
-    interface ISGViewModel
-    {
-        VisualElement parentView { get; set; }
-
-        // Wipes all data in this view-model that will be fed to the view that depends on it
-        // A notable point is that this function typically should not null out the parentView field seen above
-        void ResetViewModelData();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:121ee6424e32b00f34bb0b1a07d244f0c479dc732b9168ac08a36f317cd818f7
+size 403

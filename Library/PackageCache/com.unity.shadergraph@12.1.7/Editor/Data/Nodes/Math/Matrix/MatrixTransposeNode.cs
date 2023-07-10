@@ -1,36 +1,3 @@
-using System.Reflection;
-using UnityEngine;
-
-namespace UnityEditor.ShaderGraph
-{
-    [Title("Math", "Matrix", "Matrix Transpose")]
-    class MatrixTransposeNode : CodeFunctionNode
-    {
-        public MatrixTransposeNode()
-        {
-            name = "Matrix Transpose";
-        }
-
-        public override bool hasPreview
-        {
-            get { return false; }
-        }
-
-        protected override MethodInfo GetFunctionToConvert()
-        {
-            return GetType().GetMethod("Unity_MatrixTranspose", BindingFlags.Static | BindingFlags.NonPublic);
-        }
-
-        static string Unity_MatrixTranspose(
-            [Slot(0, Binding.None)] DynamicDimensionMatrix In,
-            [Slot(1, Binding.None)] out DynamicDimensionMatrix Out)
-        {
-            return
-@"
-{
-    Out = transpose(In);
-}
-";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a07392b61ac48b9c85a08657a802687085c0b2f7a4c77f5f3d4881a11be66e9b
+size 829

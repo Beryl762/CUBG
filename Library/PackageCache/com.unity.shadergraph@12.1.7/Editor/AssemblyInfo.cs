@@ -1,10 +1,3 @@
-using System.Runtime.CompilerServices;
-
-[assembly: InternalsVisibleTo("Unity.ShaderGraph.Editor.Tests")]
-[assembly: InternalsVisibleTo("Unity.RenderPipelines.Universal.Editor")]
-[assembly: InternalsVisibleTo("Unity.ShaderGraph.GraphicsTests")]
-[assembly: InternalsVisibleTo("Unity.ShaderGraph.Editor.GraphicsTests")]
-[assembly: InternalsVisibleTo("Unity.RenderPipelines.HighDefinition.Editor")]
-[assembly: InternalsVisibleTo("Unity.VisualEffectGraph.Editor")]
-[assembly: InternalsVisibleTo("Unity.Industrial.Materials.AVRD.Editor")]
-[assembly: InternalsVisibleTo("Unity.VisualEffectGraph.EditorTests")]
+version https://git-lfs.github.com/spec/v1
+oid sha256:d98f1b042904082177e617d43d3ebce62b431cc72132b960bf1eb782e1697dcf
+size 603

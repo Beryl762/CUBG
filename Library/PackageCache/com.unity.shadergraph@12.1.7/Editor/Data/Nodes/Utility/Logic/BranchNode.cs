@@ -1,34 +1,3 @@
-using System.Reflection;
-using UnityEngine;
-
-namespace UnityEditor.ShaderGraph
-{
-    [Title("Utility", "Logic", "Branch")]
-    class BranchNode : CodeFunctionNode
-    {
-        public BranchNode()
-        {
-            name = "Branch";
-            synonyms = new string[] { "switch", "if", "else" };
-        }
-
-        protected override MethodInfo GetFunctionToConvert()
-        {
-            return GetType().GetMethod("Unity_Branch", BindingFlags.Static | BindingFlags.NonPublic);
-        }
-
-        static string Unity_Branch(
-            [Slot(0, Binding.None)] Boolean Predicate,
-            [Slot(1, Binding.None, 1, 1, 1, 1)] DynamicDimensionVector True,
-            [Slot(2, Binding.None, 0, 0, 0, 0)] DynamicDimensionVector False,
-            [Slot(3, Binding.None)] out DynamicDimensionVector Out)
-        {
-            return
-@"
-{
-    Out = Predicate ? True : False;
-}
-";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:554e3210587efda2ede51cb1c5261c303ae18f250c57e9d26d7b09d99abdc4df
+size 902

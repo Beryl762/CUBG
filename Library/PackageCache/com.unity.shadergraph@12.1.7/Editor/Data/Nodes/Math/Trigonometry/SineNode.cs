@@ -1,30 +1,3 @@
-using System.Reflection;
-
-namespace UnityEditor.ShaderGraph
-{
-    [Title("Math", "Trigonometry", "Sine")]
-    class SineNode : CodeFunctionNode
-    {
-        public SineNode()
-        {
-            name = "Sine";
-        }
-
-        protected override MethodInfo GetFunctionToConvert()
-        {
-            return GetType().GetMethod("Unity_Sine", BindingFlags.Static | BindingFlags.NonPublic);
-        }
-
-        static string Unity_Sine(
-            [Slot(0, Binding.None)] DynamicDimensionVector In,
-            [Slot(1, Binding.None)] out DynamicDimensionVector Out)
-        {
-            return
-@"
-{
-    Out = sin(In);
-}
-";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:60f17e9810ef26740af629f00aee7d3c22385f97ef883c7497b8fb89c4b73116
+size 647

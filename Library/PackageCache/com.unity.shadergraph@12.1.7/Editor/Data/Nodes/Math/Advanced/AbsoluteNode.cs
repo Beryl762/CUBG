@@ -1,31 +1,3 @@
-using System.Reflection;
-
-namespace UnityEditor.ShaderGraph
-{
-    [Title("Math", "Advanced", "Absolute")]
-    class AbsoluteNode : CodeFunctionNode
-    {
-        public AbsoluteNode()
-        {
-            name = "Absolute";
-            synonyms = new string[] { "positive" };
-        }
-
-        protected override MethodInfo GetFunctionToConvert()
-        {
-            return GetType().GetMethod("Unity_Absolute", BindingFlags.Static | BindingFlags.NonPublic);
-        }
-
-        static string Unity_Absolute(
-            [Slot(0, Binding.None)] DynamicDimensionVector In,
-            [Slot(1, Binding.None)] out DynamicDimensionVector Out)
-        {
-            return
-@"
-{
-    Out = abs(In);
-}
-";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4947e5f08620b85eb26b7ef70864800c93d9aea6fca916cf48b1fa0030f400df
+size 719

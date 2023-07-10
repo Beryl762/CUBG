@@ -1,23 +1,3 @@
-# Arccosine Node
-
-## Description
-
-Returns the arccosine of each component of the input **In** as a vector of the same dimension and equal length. Each component should be within the range of -1 to 1.
-
-## Ports
-
-| Name        | Direction           | Type  | Description |
-|:------------ |:-------------|:-----|:---|
-| In      | Input | Dynamic Vector | Input value |
-| Out | Output      |    Dynamic Vector | Output value |
-
-## Generated Code Example
-
-The following example code represents one possible outcome of this node.
-
-```
-void Unity_Arccosine_float4(float4 In, out float4 Out)
-{
-    Out = acos(In);
-}
-```
+version https://git-lfs.github.com/spec/v1
+oid sha256:1bc2bf8110b84f1650fd54e65b8ded21373e435617caa571c7b78a928bcd111a
+size 612

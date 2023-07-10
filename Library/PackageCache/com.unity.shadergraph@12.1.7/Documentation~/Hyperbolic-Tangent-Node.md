@@ -1,23 +1,3 @@
-# Hyperbolic Tangent Node
-
-## Description
-
-Returns the hyperbolic tangent of input **In**.
-
-## Ports
-
-| Name        | Direction           | Type  | Description |
-|:------------ |:-------------|:-----|:---|
-| In      | Input | Dynamic Vector | Input value |
-| Out | Output      |    Dynamic Vector | Output value |
-
-## Generated Code Example
-
-The following example code represents one possible outcome of this node.
-
-```
-void Unity_HyperbolicTangent_float4(float4 In, out float4 Out)
-{
-    Out = tanh(In);
-}
-```
+version https://git-lfs.github.com/spec/v1
+oid sha256:d50cc788f5c929f2c6568697a7565d794d28bf0b650bf85a72e0fc2ae4c7a3ea
+size 511

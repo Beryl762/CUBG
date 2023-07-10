@@ -1,20 +1,3 @@
-# Float Node
-
-## Description
-
-Defines a **Float** value in the shader. If [Port](Port.md) **X** is not connected with an [Edge](Edge.md) this [Node](Node.md) defines a constant **Float**.
-
-## Ports
-
-| Name        | Direction           | Type  | Binding | Description |
-|:------------ |:-------------|:-----|:---|:---|
-| X      | Input | Float    | None | Input x component value |
-| Out | Output      |    Float    | None | Output value |
-
-## Generated Code Example
-
-The following example code represents one possible outcome of this node.
-
-```
-float _Vector1_Out = X;
-```
+version https://git-lfs.github.com/spec/v1
+oid sha256:1673802ceee8804aabc3579de62b6d4b1d1833b312ed36b64c4ac65a7ff48c88
+size 573

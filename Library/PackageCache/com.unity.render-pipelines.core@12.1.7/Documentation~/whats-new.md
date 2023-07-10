@@ -1,7 +1,3 @@
-# What's new in SRP Core
-
-This section contains information about changes to SRP Core. Each page contains a list of new features and, if relevant, a list of improvements and a list of resolved issues.
-
-The list of pages is as follows:
-
-- [12](whats-new-12.md)
+version https://git-lfs.github.com/spec/v1
+oid sha256:38d7c6a369a9566c12547b02eb0d7706387730d5ca2b4224aec24467bcc96718
+size 260

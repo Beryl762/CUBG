@@ -1,34 +1,3 @@
-using System.Reflection;
-using UnityEngine;
-
-namespace UnityEditor.ShaderGraph
-{
-    [Title("Math", "Vector", "Sphere Mask")]
-    class SphereMaskNode : CodeFunctionNode
-    {
-        public SphereMaskNode()
-        {
-            name = "Sphere Mask";
-        }
-
-        protected override MethodInfo GetFunctionToConvert()
-        {
-            return GetType().GetMethod("SphereMask", BindingFlags.Static | BindingFlags.NonPublic);
-        }
-
-        static string SphereMask(
-            [Slot(0, Binding.None)] DynamicDimensionVector Coords,
-            [Slot(1, Binding.None, 0.5f, 0.5f, 0.5f, 0.5f)] DynamicDimensionVector Center,
-            [Slot(2, Binding.None, 0.1f, 0.1f, 0.1f, 0.1f)] Vector1 Radius,
-            [Slot(3, Binding.None, 0.8f, 0.8f, 0.8f, 0.8f)] Vector1 Hardness,
-            [Slot(4, Binding.None)] out DynamicDimensionVector Out)
-        {
-            return
-@"
-{
-    Out = 1 - saturate((distance(Coords, Center) - Radius) / (1 - Hardness));
-}
-";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:403819712df8e2a919c042ec2c79713740f9634a58d5cf5a9d7f7351307fcc2c
+size 994

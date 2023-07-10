@@ -1,5 +1,3 @@
----
-title: nodes-fragment-only
----
-
-This node can only connect to a Block node in the **Fragment** Context of your Shader Graph. For more information on Block nodes and Contexts, see [Master Stack](Master-Stack.md).
+version https://git-lfs.github.com/spec/v1
+oid sha256:d00187f9f34dee7616c8f8f31b42ba027f083c6999e894a359709b066bd8015c
+size 216

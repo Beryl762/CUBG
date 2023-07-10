@@ -1,20 +1,3 @@
-Shader "Hidden/UnlitTransparentColored" {
-    Properties {
-        _Color ("Main Color", Color) = (1,1,1,1)
-    }
-
-    SubShader {
-        Tags {"Queue"="Transparent" "IgnoreProjector"="True" "RenderType"="Transparent"}
-
-        ZWrite Off
-        Lighting Off
-        Fog { Mode Off }
-        Cull Off
-
-        Blend SrcAlpha OneMinusSrcAlpha
-
-        Pass {
-            Color [_Color]
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2393f5121c7d1f0ceda18afa230063ec00842dfabc0dddc0112b4164200eaf09
+size 405

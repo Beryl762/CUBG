@@ -1,18 +1,3 @@
-using UnityEditor.Graphing;
-
-namespace UnityEditor.ShaderGraph
-{
-    interface IMayRequireDepthTexture
-    {
-        bool RequiresDepthTexture(ShaderStageCapability stageCapability = ShaderStageCapability.All);
-    }
-
-    static class MayRequireDepthTextureExtensions
-    {
-        public static bool RequiresDepthTexture(this MaterialSlot slot)
-        {
-            var mayRequireDepthTexture = slot as IMayRequireDepthTexture;
-            return mayRequireDepthTexture != null && mayRequireDepthTexture.RequiresDepthTexture();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1f67076f86c596199c9e393dd2aaee08b98f3ec937ec3da9b81e151b4e870dca
+size 548

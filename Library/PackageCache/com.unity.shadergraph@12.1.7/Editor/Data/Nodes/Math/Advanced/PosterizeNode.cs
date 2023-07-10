@@ -1,31 +1,3 @@
-using System.Reflection;
-
-namespace UnityEditor.ShaderGraph
-{
-    [Title("Math", "Advanced", "Posterize")]
-    class PosterizeNode : CodeFunctionNode
-    {
-        public PosterizeNode()
-        {
-            name = "Posterize";
-        }
-
-        protected override MethodInfo GetFunctionToConvert()
-        {
-            return GetType().GetMethod("Unity_Posterize", BindingFlags.Static | BindingFlags.NonPublic);
-        }
-
-        static string Unity_Posterize(
-            [Slot(0, Binding.None, 0, 0, 0, 0)] DynamicDimensionVector In,
-            [Slot(1, Binding.None, 4, 4, 4, 4)] DynamicDimensionVector Steps,
-            [Slot(2, Binding.None)] out DynamicDimensionVector Out)
-        {
-            return
-@"
-{
-    Out = floor(In / (1 / Steps)) * (1 / Steps);
-}
-";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a983f34e4a28b9493e8d2f9041650f240bc8ab116ef22dac383b043f1c331703
+size 793

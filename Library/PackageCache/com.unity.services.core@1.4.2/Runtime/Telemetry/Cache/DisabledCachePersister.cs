@@ -1,19 +1,3 @@
-using System;
-
-namespace Unity.Services.Core.Telemetry.Internal
-{
-    class DisabledCachePersister<TPayload> : ICachePersister<TPayload>
-        where TPayload : ITelemetryPayload
-    {
-        const string k_ErrorMessage = "Cache persistence isn't supported on the current platform.";
-
-        public bool CanPersist => false;
-
-        public void Persist(CachedPayload<TPayload> cache) => throw new NotSupportedException(k_ErrorMessage);
-
-        public bool TryFetch(out CachedPayload<TPayload> persistedCache)
-            => throw new NotSupportedException(k_ErrorMessage);
-
-        public void Delete() => throw new NotSupportedException(k_ErrorMessage);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:98169de0ba9594aeab0f7a85d62e6e93598870c4d1f966fdbe32149e72514479
+size 687

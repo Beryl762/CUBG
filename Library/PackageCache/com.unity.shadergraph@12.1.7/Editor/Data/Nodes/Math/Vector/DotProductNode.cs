@@ -1,33 +1,3 @@
-using System.Reflection;
-using UnityEngine;
-
-namespace UnityEditor.ShaderGraph
-{
-    [Title("Math", "Vector", "Dot Product")]
-    class DotProductNode : CodeFunctionNode
-    {
-        public DotProductNode()
-        {
-            name = "Dot Product";
-            synonyms = new string[] { "scalar product" };
-        }
-
-        protected override MethodInfo GetFunctionToConvert()
-        {
-            return GetType().GetMethod("Unity_DotProduct", BindingFlags.Static | BindingFlags.NonPublic);
-        }
-
-        static string Unity_DotProduct(
-            [Slot(0, Binding.None, 0, 0, 0, 0)] DynamicDimensionVector A,
-            [Slot(1, Binding.None, 0, 1, 0, 0)] DynamicDimensionVector B,
-            [Slot(2, Binding.None)] out Vector1 Out)
-        {
-            return
-@"
-{
-    Out = dot(A, B);
-}
-";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d108c9525e89bb99b5f3a2c5ad2f765efdb34e635dca2ce6ca7cc9ffe0d346af
+size 828

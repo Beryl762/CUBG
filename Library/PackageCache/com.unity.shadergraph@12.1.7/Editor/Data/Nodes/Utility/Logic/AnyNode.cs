@@ -1,36 +1,3 @@
-using System.Reflection;
-using UnityEngine;
-
-namespace UnityEditor.ShaderGraph
-{
-    [Title("Utility", "Logic", "Any")]
-    class AnyNode : CodeFunctionNode
-    {
-        public AnyNode()
-        {
-            name = "Any";
-        }
-
-        public override bool hasPreview
-        {
-            get { return false; }
-        }
-
-        protected override MethodInfo GetFunctionToConvert()
-        {
-            return GetType().GetMethod("Unity_Any", BindingFlags.Static | BindingFlags.NonPublic);
-        }
-
-        static string Unity_Any(
-            [Slot(0, Binding.None)] DynamicDimensionVector In,
-            [Slot(1, Binding.None)] out Boolean Out)
-        {
-            return
-@"
-{
-    Out = any(In);
-}
-";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fdb4a8b32e145d687bad88ae19d2d3e75393361d86068e7d74d5bfdd0fbbc897
+size 736

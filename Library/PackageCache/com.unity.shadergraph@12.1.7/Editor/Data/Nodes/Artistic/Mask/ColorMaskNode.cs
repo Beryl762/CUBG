@@ -1,34 +1,3 @@
-using System.Reflection;
-using UnityEngine;
-
-namespace UnityEditor.ShaderGraph
-{
-    [Title("Artistic", "Mask", "Color Mask")]
-    class ColorMaskNode : CodeFunctionNode
-    {
-        public ColorMaskNode()
-        {
-            name = "Color Mask";
-        }
-
-        protected override MethodInfo GetFunctionToConvert()
-        {
-            return GetType().GetMethod("Unity_ColorMask", BindingFlags.Static | BindingFlags.NonPublic);
-        }
-
-        static string Unity_ColorMask(
-            [Slot(0, Binding.None)] Vector3 In,
-            [Slot(1, Binding.None)] ColorRGB MaskColor,
-            [Slot(2, Binding.None)] Vector1 Range,
-            [Slot(4, Binding.None)] Vector1 Fuzziness,
-            [Slot(3, Binding.None)] out Vector1 Out)
-        {
-            return
-@"
-{
-    $precision Distance = distance(MaskColor, In);
-    Out = saturate(1 - (Distance - Range) / max(Fuzziness, 1e-5));
-}";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:05e64c4bc5a3b6a32ed0b2f5959902fc525692f247f51b9cfa4b92bb4dd01206
+size 924

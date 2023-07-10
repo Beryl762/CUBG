@@ -1,15 +1,3 @@
-ColorRGBSlotControlView {
-    flex-direction: row;
-    align-items: center;
-}
-
-.unity-base-field {
-    width: 41px;
-    margin-top: 1px;
-    margin-bottom: 1px;
-}
-
-.unity-base-field__input {
-    margin-left: 0;
-    margin-right: 0;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0884553957405a7f832faeaf5ed751b53f00754eaef4f357c351d740e4df6e94
+size 234

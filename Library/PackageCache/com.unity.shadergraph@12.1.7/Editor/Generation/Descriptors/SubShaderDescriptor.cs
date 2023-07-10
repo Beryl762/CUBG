@@ -1,13 +1,3 @@
-namespace UnityEditor.ShaderGraph
-{
-    [GenerationAPI]
-    internal struct SubShaderDescriptor
-    {
-        public string pipelineTag;
-        public string customTags;
-        public string renderType;
-        public string renderQueue;
-        public bool generatesPreview;
-        public PassCollection passes;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f0c7305d1d7e731b6159096c2bffa8511b74be4a4dc7d9d77953b7f11871c2b9
+size 324

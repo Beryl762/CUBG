@@ -1,23 +1,3 @@
-# Ceiling Node
-
-## Description
-
-Returns the smallest integer value, or whole number, that is greater than or equal to the value of input **In**.
-
-## Ports
-
-| Name        | Direction           | Type  | Description |
-|:------------ |:-------------|:-----|:---|
-| In      | Input | Dynamic Vector | Input value |
-| Out | Output      |    Dynamic Vector | Output value |
-
-## Generated Code Example
-
-The following example code represents one possible outcome of this node.
-
-```
-void Unity_Ceiling_float4(float4 In, out float4 Out)
-{
-    Out = ceil(In);
-}
-```
+version https://git-lfs.github.com/spec/v1
+oid sha256:c95d533c4bc36ae034d22e778fe790fc242429a73dd4a2dbe31806942c078994
+size 555

@@ -1,13 +1,3 @@
-using System;
-using System.Collections.Generic;
-using UnityEditor.Graphing;
-
-namespace UnityEditor.ShaderGraph.Legacy
-{
-    [FormerName("UnityEditor.Experimental.Rendering.Universal.SpriteUnlitMasterNode")]
-    class SpriteUnlitMasterNode1 : AbstractMaterialNode, IMasterNode1
-    {
-        public string m_ShaderGUIOverride;
-        public bool m_OverrideEnabled;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5ec6a089afcb37be31a595821048196d63985e398b37da86949def7be5981ac0
+size 373

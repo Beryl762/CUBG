@@ -1,23 +1,3 @@
-# Saturate Node
-
-## Description
-
-Returns the value of input **In** clamped between 0 and 1.
-
-## Ports
-
-| Name        | Direction           | Type  | Description |
-|:------------ |:-------------|:-----|:---|
-| In      | Input | Dynamic Vector | Input value |
-| Out | Output      |    Dynamic Vector | Output value |
-
-## Generated Code Example
-
-The following example code represents one possible outcome of this node.
-
-```
-void Unity_Saturate_float4(float4 In, out float4 Out)
-{
-    Out = saturate(In);
-}
-```
+version https://git-lfs.github.com/spec/v1
+oid sha256:c3eb28052a7e56dd16041aa889d30b32fc7a8eb7587e144f5219d4636f7d0b55
+size 507

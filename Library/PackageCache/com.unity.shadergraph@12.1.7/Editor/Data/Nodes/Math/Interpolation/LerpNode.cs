@@ -1,32 +1,3 @@
-using System.Reflection;
-
-namespace UnityEditor.ShaderGraph
-{
-    [Title("Math", "Interpolation", "Lerp")]
-    class LerpNode : CodeFunctionNode
-    {
-        public LerpNode()
-        {
-            name = "Lerp";
-            synonyms = new string[] { "mix", "blend", "linear interpolate" };
-        }
-
-        protected override MethodInfo GetFunctionToConvert()
-        {
-            return GetType().GetMethod("Unity_Lerp", BindingFlags.Static | BindingFlags.NonPublic);
-        }
-
-        static string Unity_Lerp(
-            [Slot(0, Binding.None, 0, 0, 0, 0)] DynamicDimensionVector A,
-            [Slot(1, Binding.None, 1, 1, 1, 1)] DynamicDimensionVector B,
-            [Slot(2, Binding.None, 0, 0, 0, 0)] DynamicDimensionVector T,
-            [Slot(3, Binding.None)] out DynamicDimensionVector Out)
-        {
-            return
-@"
-{
-    Out = lerp(A, B, T);
-}";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:74fbdafdc92018714ec05f3788148b2e8b1741f20c9e85e9af99998aca4bb929
+size 890

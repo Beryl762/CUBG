@@ -1,5 +1,3 @@
----
-title: hdrp-latest-link
----
-
-For more information on the HDRP, see [Unity's HDRP package documentation](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@latest).
+version https://git-lfs.github.com/spec/v1
+oid sha256:fc3de605ca52e4427168f6c4905ed26b6f2eebc1041102fff82aaf05b65edd12
+size 194

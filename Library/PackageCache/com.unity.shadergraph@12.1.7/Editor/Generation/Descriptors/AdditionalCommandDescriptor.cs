@@ -1,16 +1,3 @@
-using System.Collections.Generic;
-
-namespace UnityEditor.ShaderGraph
-{
-    internal class AdditionalCommandDescriptor
-    {
-        public string token { get; }
-        public string content { get; }
-
-        public AdditionalCommandDescriptor(string token, string content)
-        {
-            this.token = token;
-            this.content = content;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f40ceb07656a26857a3c8524ddd6092262e3f33601ac1ec212d358ee275db840
+size 370

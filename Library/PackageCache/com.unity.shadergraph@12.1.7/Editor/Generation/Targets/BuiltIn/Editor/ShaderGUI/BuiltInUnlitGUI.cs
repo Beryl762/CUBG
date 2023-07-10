@@ -1,13 +1,3 @@
-using UnityEngine;
-
-namespace UnityEditor.Rendering.BuiltIn.ShaderGraph
-{
-    // Currently this is just the base shader gui, but was put in place in case they're separate later
-    public class BuiltInUnlitGUI : BuiltInBaseShaderGUI
-    {
-        public static void UpdateMaterial(Material material)
-        {
-            SetupSurface(material);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c904a55986ac2f1d4aaaddb92d30e3bac22bead65797a755c12a1decb39dfd3e
+size 364

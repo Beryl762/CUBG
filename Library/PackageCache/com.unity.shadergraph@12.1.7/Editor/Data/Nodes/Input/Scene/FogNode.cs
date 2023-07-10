@@ -1,35 +1,3 @@
-using System.Reflection;
-using UnityEngine;
-
-namespace UnityEditor.ShaderGraph
-{
-    [Title("Input", "Scene", "Fog")]
-    class FogNode : CodeFunctionNode
-    {
-        public FogNode()
-        {
-            name = "Fog";
-        }
-
-        public override bool hasPreview { get { return false; } }
-
-        protected override MethodInfo GetFunctionToConvert()
-        {
-            return GetType().GetMethod("Unity_Fog", BindingFlags.Static | BindingFlags.NonPublic);
-        }
-
-        static string Unity_Fog(
-            [Slot(2, Binding.ObjectSpacePosition)] Vector3 Position,
-            [Slot(0, Binding.None)] out Vector4 Color,
-            [Slot(1, Binding.None)] out Vector1 Density)
-        {
-            Color = Vector4.zero;
-            return
-@"
-{
-    SHADERGRAPH_FOG(Position, Color, Density);
-}
-";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a6c8d2493b1f848155ae89aa3ad379c5bd76a49041342f3344ddc2aa6df2ad53
+size 833

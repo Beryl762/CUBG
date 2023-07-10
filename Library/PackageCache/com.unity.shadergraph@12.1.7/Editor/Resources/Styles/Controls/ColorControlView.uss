@@ -1,32 +1,3 @@
-ColorControlView > ColorField {
-    flex-direction: row;
-}
-
-ColorControlView > #enumPanel {
-    flex-direction: row;
-}
-
-ColorControlView > ColorField {
-    margin-left: 8px;
-    margin-right: 8px;
-    width: 184px;
-}
-
-ColorControlView > #enumPanel > EnumField {
-    flex: 1;
-    height: 19px;
-}
-
-ColorControlView > #enumPanel > EnumField > .unity-base-field__input{
-    margin-left: 0;
-    margin-right: 8px;
-    margin-top: 4px;
-    margin-bottom: 0;
-}
-
-ColorControlView > #enumPanel > Label {
-    width: 100px;
-    margin-left: 8px;
-    margin-right: 8px;
-    -unity-text-align: middle-left;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0000e7af653712537620ff0243f9ce6a6857cf4d24bd6990624f6c11e7b37c98
+size 596

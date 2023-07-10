@@ -1,26 +1,3 @@
-# Noise Sine Wave Node
-
-## Description
-
-Returns the sine of the value of input **In**. For variance, psuedo-random noise is added to the amplitude of the sine wave, within a range determined by input **Min Max**.
-
-## Ports
-
-| Name        | Direction           | Type  | Description |
-|:------------ |:-------------|:-----|:---|
-| In      | Input | Dynamic Vector | Input value |
-| Min Max | Input | Vector 2 | Minimum and Maximum values for noise intensity  |
-| Out | Output      |    Dynamic Vector | Output value |
-
-## Generated Code Example
-
-```
-void Unity_NoiseSineWave_float4(float4 In, float2 MinMax, out float4 Out)
-{
-    float sinIn = sin(In);
-    float sinInOffset = sin(In + 1.0);
-    float randomno =  frac(sin((sinIn - sinInOffset) * (12.9898 + 78.233))*43758.5453);
-    float noise = lerp(MinMax.x, MinMax.y, randomno);
-    Out = sinIn + noise;
-}
-```
+version https://git-lfs.github.com/spec/v1
+oid sha256:70b18003d5feb1719475516bbede2fa3c4d2c332b6df8c5a9319c8d58aa921b4
+size 864

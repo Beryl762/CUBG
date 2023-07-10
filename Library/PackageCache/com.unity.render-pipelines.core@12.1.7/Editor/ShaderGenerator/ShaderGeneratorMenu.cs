@@ -1,15 +1,3 @@
-using System.Threading.Tasks;
-using UnityEngine.Rendering;
-
-namespace UnityEditor.Rendering
-{
-    class ShaderGeneratorMenu
-    {
-        [MenuItem("Edit/Rendering/Generate Shader Includes", priority = CoreUtils.Sections.section3 + CoreUtils.Priorities.editMenuPriority + 1)]
-        async static Task GenerateShaderIncludes()
-        {
-            await CSharpToHLSL.GenerateAll();
-            AssetDatabase.Refresh();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7186e59ac800e43c3bfe89c533dcbf007a2818c65d19af5b1a802c0b8a0f74b0
+size 438

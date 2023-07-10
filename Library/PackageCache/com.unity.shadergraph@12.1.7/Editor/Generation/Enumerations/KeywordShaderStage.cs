@@ -1,20 +1,3 @@
-namespace UnityEditor.ShaderGraph
-{
-    [GenerationAPI]
-    internal enum KeywordShaderStage
-    {
-        Default = 0,        // equivalent to ALL
-
-        Vertex = (1 << 0),
-        Fragment = (1 << 1),
-        Geometry = (1 << 2),
-        Hull = (1 << 3),
-        Domain = (1 << 4),
-        RayTracing = (1 << 5),
-
-        // Common aggregates
-        FragmentAndRaytracing = (Fragment | RayTracing),
-        VertexFragmentAndRaytracing = (Vertex | Fragment | RayTracing),
-        All = (Vertex | Fragment | Geometry | Hull | Domain | RayTracing)
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:decc40018e1d45f92ee926ad1c0bbf1420eedb901cd1b107af133d009f7a78aa
+size 558

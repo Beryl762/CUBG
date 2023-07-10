@@ -1,11 +1,3 @@
-# Main Preview
-
-## Description
-
-The **Main Preview** displays a representation of the shader on the active **Render Pipeline**. It updates in real-time and automatically updates to display any changes you make in the Shader Graph. The title bar of the **Main Preview** displays the name of the current shader.
-
-The **Main Preview** can be moved to anywhere in the [Shader Graph Window](Shader-Graph-Window.md) and will automatically move with the nearest corner of that window.
-
-### Preview Mesh
-
-You can rotate the preview mesh by holding left mouse button and dragging on the **Main Preview** and you can scale it by using the scroll wheel. The preview mesh can be changed by right clicking on the **Main Preview**. Here you can select from any primitive mesh types or select a custom mesh.
+version https://git-lfs.github.com/spec/v1
+oid sha256:da6e5db1bcff750b130ca4ed89b9baa9f0bdb1a598cdf68073c5258149aa78c5
+size 793
